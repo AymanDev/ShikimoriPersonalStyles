@@ -1,0 +1,632 @@
+@import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_1.css");
+@import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_2.css");
+@import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_3.css");
+@import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_4mob.css");
+body:after {
+  background-image: url("https://i.ibb.co/Nxz7hBW/back.jpg");
+}
+
+.l-footer:after {
+  content: "*Lignum*";
+  display: none !important;
+}
+
+@media screen and (min-width: 1px) {
+  .correct-mob-version {
+    color: normal;
+  }
+}
+
+.shikista {
+  color: white;
+}
+
+@media screen and (min-width: 1px) {
+  html:root {
+    --white-color: 194, 240, 234;
+    --light-color: 146, 196, 183;
+    --dark-color: 108, 172, 165;
+    --bright-color: 52, 178, 146;
+    --dull-color: 133, 224, 201;
+    --input-color: 75, 155, 128;
+    --hover-bottoms-1: 18, 43, 37;
+    --buttoms-color: 31, 71, 61;
+    --hover-buttoms-2: 81, 107, 6;
+    --very-high-rating: 65, 164, 164;
+    --high-rating: 58, 120, 120;
+    --average-rating: 35, 92, 92;
+    --small-rating: 21, 71, 71;
+    --time-filled: 20, 61, 54;
+    --time-empty: 13, 33, 30;
+    --anime-inprocess: 69, 146, 76;
+    --anime-complete: 41, 107, 47;
+    --manga-inprocess: 189, 15, 86;
+    --manga-complete: 153, 0, 62;
+    --hover-color: 125, 171, 31;
+    --shadows-color: 83, 172, 172;
+    --block-color: 23, 54, 54;
+    --menu-back: 0, 10, 10;
+    --nick-cover: 32, 96, 85;
+    --popup-color: 0, 20, 20;
+    --hundred: 1;
+  }
+}
+
+.bar.vertical .line {
+	overflow: visible;
+}
+.activity .graph.vertical .line .bar {
+	animation-name: none;
+}
+
+.bar.vertical .line .bar-container .value {
+	display: block;
+  	margin-bottom: -12px;
+}
+
+.bar.vertical .line .x_label {
+	margin-bottom: -12px;
+}
+
+.cc-favourites {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 1fr;
+}
+.c-manga {
+  order: 0;
+}
+
+.c-anime {
+  order: 1;
+}
+
+.c-character {
+  order: 2;
+}
+
+.c-person {
+  order: 3;
+}
+
+.p-profiles-show .cc-favourites:after {
+  display: none;
+}
+
+.cc-favourites .b-catalog_entry {
+  width: 100% !important;
+}
+
+.profile-content .cc-2 {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c c";
+  grid-auto-columns: 75% 25%;
+}
+
+.profile-content .c-column.c-left {
+  width: 100% !important;
+  grid-area: a;
+}
+
+.profile-content .c-column.c-left .activity::after {
+  	display: block;
+	content: '';
+  	width: 100%;
+  	height: 1px;
+  	background: rgba(var(--white-color), 0.5);
+    margin-top: 15px;
+}
+
+.profile-content .c-column.c-right {
+  display: contents;
+}
+.profile-content .c-column.c-right .cc-2a.m30 {
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.profile-content .c-column.c-right .cc-2a.m30 > .c-column {
+  width: 100%;
+}
+.profile-content .c-column.c-right .block {
+  grid-area: c;
+}
+
+.cc-favourites .cover {
+  position: relative;
+}
+
+.cc-favourites .cover::after {
+  position: absolute;
+  bottom: 0;
+
+  color: white;
+
+  width: calc(100% - 10px);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+
+  background: rgba(var(--small-rating), 0.8);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* Nishimiya Shouko */
+img[src*="80243"] {
+  object-position: top !important;
+  content: url("https://wallpapercave.com/wp/wp4088128.png");
+}
+.cc-favourites .entry-80243 .cover::after {
+  content: "西宮 硝子";
+}
+.cc-favourites .entry-80243 .cover:hover:after {
+  content: "Nishimiya Shouko";
+}
+
+/* Remu */
+img[src*="118763"] {
+  content: url("https://pm1.narvii.com/6231/53c047f79ef9468817f876b39eda2dfdd601bf79_hq.jpg");
+}
+.cc-favourites .entry-118763 .cover::after {
+  content: "レム";
+}
+.cc-favourites .entry-118763 .cover:hover:after {
+  content: "Rem";
+}
+
+/* Hikigaya Hachiman */
+img[src*="67065"] {
+  content: url(https://images4.alphacoders.com/736/thumb-1920-736321.png);
+}
+.cc-favourites .entry-67065 .cover::after {
+  content: "比企谷 八幡";
+}
+.cc-favourites .entry-67065 .cover:hover:after {
+  content: "Hikigaya Hachiman";
+}
+
+/* Mumei (Hozumi) */
+img[src*="136529"] {
+  content: url("https://i.imgur.com/YOP6LKt.png");
+}
+.cc-favourites .entry-136529 .cover::after {
+  content: "無名 (穂積)";
+}
+.cc-favourites .entry-136529 .cover:hover:after {
+  content: "Mumei (Hozumi)";
+}
+
+/* Kochou Shinobu */
+img[src*="146736"] {
+  content: url("https://i.pinimg.com/originals/4a/fb/b1/4afbb153c45c598caee857c3c1901d34.png");
+}
+.cc-favourites .entry-146736 .cover::after {
+  content: "胡蝶 しのぶ";
+}
+.cc-favourites .entry-146736 .cover:hover:after {
+  content: "Kochou Shinobu";
+}
+
+/* Jibril */
+img[src*="97761"] {
+  content: url(https://i.ytimg.com/vi/8LQacPpYjLU/maxresdefault.jpg);
+}
+.cc-favourites .entry-97761 .cover::after {
+  content: "ジブリール";
+}
+.cc-favourites .entry-97761 .cover:hover:after {
+  content: "Jibril";
+}
+
+/* Necron Misha */
+img[src*="177217"] {
+  content: url("https://kawaii-mobile.com/wp-content/uploads/2020/11/Maou-Gakuin-no-Futekigousha-Misha-Necron-Sasha-Necron.Android-wallpaper-2160x1920.jpg");
+  object-position: left !important;
+}
+.cc-favourites .entry-177217 .cover::after {
+  content: "ミーシャ・ネクロン";
+}
+.cc-favourites .entry-177217 .cover:hover:after {
+  content: "Necron Misha";
+}
+
+/* Purifier */
+img[src*="176725"] {
+  content: url(https://i.imgur.com/sPnqFsx.jpg);
+}
+.cc-favourites .entry-176725 .cover::after {
+  content: "ピュリファイアー";
+}
+.cc-favourites .entry-176725 .cover:hover:after {
+  content: "Purifier";
+}
+
+/* Shilva Noelle */
+img[src*="127141"] {
+  content: url(https://scontent-atl3-2.cdninstagram.com/v/t51.2885-15/e35/c161.0.414.414a/s320x320/117530087_1471102409742728_1975641936322730177_n.jpg?_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=108&_nc_ohc=kNV63Uo0-V4AX-nKJiV&oh=462e746f9c7d7f07cd9b4840075b16eb&oe=5F614C2A);
+}
+.cc-favourites .entry-127141 .cover::after {
+  content: "ノエル・シルヴァ";
+}
+.cc-favourites .entry-127141 .cover:hover:after {
+  content: "Shilva Noelle";
+}
+
+/* Charmy Papittoson */
+img[src*="143724"] {
+  content: url(https://i.pinimg.com/originals/9e/d2/45/9ed245b3fc99ac6fd4753f9e63ca307b.png);
+}
+.cc-favourites .entry-143724 .cover::after {
+  content: "チャーミー・パピットソン";
+  font-size: 13px;
+}
+.cc-favourites .entry-143724 .cover:hover:after {
+  content: "Charmy Papittoson";
+  font-size: 16px;
+}
+
+/* Voltia Luck */
+img[src*="127886"] {
+  content: url(https://pm1.narvii.com/7251/7db9c2487f457746152c76b199ca999e39712fdcr1-1080-1018v2_hq.jpg);
+}
+.cc-favourites .entry-127886 .cover::after {
+  content: "ラック・ボルディア";
+}
+.cc-favourites .entry-127886 .cover:hover:after {
+  content: "Voltia Luck";
+}
+
+/* Vermillion Mimosa */
+img[src*="150704"] {
+  content: url("https://64.media.tumblr.com/0f75ffa370660e274eb2f5ab2ffc59bf/b34bbb744edca21a-c4/s640x960/b19539f9c1cf75ed34f273a0fd300dd4bbaacb2d.jpg");
+}
+.cc-favourites .entry-150704 .cover::after {
+  content: "ミモザ・ヴァーミリオン";
+  font-size: 13px;
+}
+.cc-favourites .entry-150704 .cover:hover:after {
+  content: "Vermillion Mimosa";
+  font-size: 16px;
+}
+
+/* Mirizé Vladilena */
+img[src*="150824"] {
+  content: url("https://pbs.twimg.com/media/EtE0xXFW4Aca9YX.jpg");
+}
+.cc-favourites .entry-150824 .cover::after {
+  content: "ヴラディレーナ・ミリーゼ";
+  font-size: 12px;
+}
+.cc-favourites .entry-150824 .cover:hover:after {
+  content: "Mirizé Vladilena";
+  font-size: 16px;
+}
+
+/* Terror */
+img[src*="23283"] {
+  content: url("https://img1.ak.crunchyroll.com/i/spire1/866791fd95d756a9ebf3a0a51b2c6d071481246024_full.jpg");
+}
+.cc-favourites .entry-23283 .cover::after {
+  content: "残響のテロル" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-23283 .cover:hover:after {
+  content: "Terror in Resonance" !important;
+  font-size: 16px !important;
+}
+
+/* Kabaneri */
+img[src*="34544"] {
+  content: url("https://i.imgur.com/0jPwVzn.jpg");
+}
+.cc-favourites .entry-34544 .cover::after {
+  content: "甲鉄城のカバネリ 〜海門決戦〜" !important;
+  font-size: 13px !important;
+}
+.cc-favourites .entry-34544 .cover:hover:after {
+  content: "Koutetsujou no Kabaneri Movie 3: Unato Kessen" !important;
+  font-size: 13px !important;
+}
+
+/* 86 */
+img[src*="104039"] {
+  content: url("https://kbimages1-a.akamaihd.net/29216134-5f0b-4080-a492-4a58461f91f1/1200/1200/False/86-eighty-six-vol-4-light-novel.jpg");
+}
+.cc-favourites .entry-104039 .cover::after {
+  content: "86-エイティシックス-" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-104039 .cover:hover:after {
+  content: "Eighty Six" !important;
+  font-size: 16px !important;
+}
+
+/* Fate */
+img[src*="33050"] {
+  content: url("https://fesapusewebsite.blob.core.windows.net/fathom/b2dbab4d5bf1cd2411ab18a0a5144b83.jpg");
+}
+.cc-favourites .entry-33050 .cover::after {
+  content: "劇場版「Fate/stay night [Heaven's Feel] III.spring song」" !important;
+  font-size: 10px !important;
+}
+.cc-favourites .entry-33050 .cover:hover:after {
+  content: "Fate/stay night Movie: Heaven's Feel - III. Spring Song" !important;
+  font-size: 13px !important;
+}
+
+/* attack on titan */
+img[src*="23390"] {
+  content: url("https://i.pinimg.com/736x/a6/aa/42/a6aa42b57ab861bce83e728bd5454e9d.jpg");
+}
+.cc-favourites .entry-23390 .cover::after {
+  content: "進撃の巨人" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-23390 .cover:hover:after {
+  content: "Attack on Titan" !important;
+  font-size: 16px !important;
+}
+
+/* silent voice */
+img[src*="56805"] {
+  content: url("https://static.wikia.nocookie.net/koenokatachi/images/2/2b/Vol1cover.jpeg/revision/latest?cb=20140419040654");
+}
+.cc-favourites .entry-56805 .cover::after {
+  content: "聲の形" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-56805 .cover:hover:after {
+  content: "A Silent Voice" !important;
+  font-size: 16px !important;
+}
+
+/* shield hero */
+img[src*="67615"] {
+  content: url("https://images-na.ssl-images-amazon.com/images/I/81lAIPP2XkL.jpg");
+}
+.cc-favourites .entry-67615 .cover::after {
+  content: "盾の勇者の成り上がり" !important;
+  font-size: 14px !important;
+}
+.cc-favourites .entry-67615 .cover:hover:after {
+  content: "The Rising of the Shield Hero" !important;
+  font-size: 14px !important;
+}
+/* Ereshkigal*/
+img[src*="177539"] {
+  content: url("https://external-preview.redd.it/I4BprEbKSg7wMyGN99FiLjEnBPXQywTT4RoUK9AAHD0.jpg?auto=webp&s=10e43b4e004b49d8399b6951aa99f71a412634b2");
+}
+.cc-favourites .entry-177539 .cover::after {
+  content: "エレシュキガル" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-177539 .cover:hover:after {
+  content: "Ereshkigal" !important;
+  font-size: 16px !important;
+}
+
+/* Yukino */
+img[src*="67067"] {
+  content: url("https://i.pinimg.com/originals/a0/0b/40/a00b40c1713d689721799a8e729d8cf2.jpg");
+}
+.cc-favourites .entry-67067 .cover::after {
+  content: "雪ノ下 雪乃" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-67067 .cover:hover:after {
+  content: "Yukino Yukinoshita" !important;
+  font-size: 16px !important;
+}
+/* azur lane */
+img[src*="38328"] {
+  content: url("https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/2286391/Japanese/2286391_Japanese_ShowKeyart_2b6a2e3c-8403-465f-8e7f-339eb84f5045.jpg");
+}
+.cc-favourites .entry-38328 .cover::after {
+  content: "アズールレーン" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-38328 .cover:hover:after {
+  content: "Azur Lane" !important;
+  font-size: 16px !important;
+}
+
+/* Tanya */
+.cc-favourites .entry-32615 .cover::after {
+  content: "幼女戦記" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-32615 .cover:hover:after {
+  content: "The Saga of Tanya the Evil" !important;
+  font-size: 16px !important;
+}
+
+/* Mei */
+.cc-favourites .entry-172812 .cover::after {
+  content: "雷電 芽衣" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-172812 .cover:hover:after {
+  content: "Mei Raiden" !important;
+  font-size: 16px !important;
+}
+
+/* Shuna */
+img[src*="131943"] {
+  content: url("https://i.pinimg.com/originals/97/8a/7f/978a7fd0522b7cbe7489c9f008501d30.png");
+}
+.cc-favourites .entry-131943 .cover::after {
+  content: "シュナ" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-131943 .cover:hover:after {
+  content: "Shuna" !important;
+  font-size: 16px !important;
+}
+
+/* Slime */
+.cc-favourites .entry-39551 .cover::after {
+  content: "転生したらスライムだった件" !important;
+  font-size: 14px !important;
+}
+.cc-favourites .entry-39551 .cover:hover:after {
+  content: "That Time I Got Reincarnated as a Slime Season 2" !important;
+  font-size: 12px !important;
+}
+
+/* Hinata Sakaguchi */
+img[src*="179800"] {
+  content: url("https://i.imgur.com/4KWYGwq.jpg");
+}
+.cc-favourites .entry-179800 .cover::after {
+  content: "坂口 日向" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-179800 .cover:hover:after {
+  content: "Hinata Sakaguchi" !important;
+  font-size: 16px !important;
+}
+
+/* Rider */
+img[src*="502"][alt="Rider"] {
+  content: url("https://i.kym-cdn.com/photos/images/original/001/883/989/85d");
+}
+.cc-favourites .entry-502 .cover::after {
+  content: "ライダー" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-502 .cover:hover:after {
+  content: "Rider" !important;
+  font-size: 16px !important;
+}
+
+/* Miu Takigawa */
+img[src*="162644"][alt="Miu Takigawa"] {
+  content: url("https://64.media.tumblr.com/fe54c7687f0b7fa37fe7c2c811b78d55/f431dda00fd2f767-94/s400x600/ca6aafcd4cd1bd94f3cdbab722b8b1bdd65d6e13.png");
+}
+.cc-favourites .entry-162644 .cover::after {
+  content: "滝川 みう" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-162644 .cover:hover:after {
+  content: "Miu Takigawa" !important;
+  font-size: 16px !important;
+}
+
+/* Hammann */
+img[src*="174387"][alt="Hammann"] {
+  content: url("https://i.imgur.com/3SCupXs.jpeg");
+}
+.cc-favourites .entry-174387 .cover::after {
+  content: "ハムマン" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-174387 .cover:hover:after {
+  content: "Hammann" !important;
+  font-size: 16px !important;
+}
+
+/* Aku */
+.cc-favourites .entry-169229 .cover::after {
+  content: "アク" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-169229 .cover:hover:after {
+  content: "Aku" !important;
+  font-size: 16px !important;
+}
+
+/* Pieck Finger */
+.cc-favourites .entry-150596 .cover::after {
+  content: "ピーク・フィンガー" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-150596 .cover:hover:after {
+  content: "Pieck Finger" !important;
+  font-size: 16px !important;
+}
+img[src*="150596"][alt="Pieck Finger"] {
+  content: url("https://pbs.twimg.com/profile_images/1376344735086911488/68j_ssaE_400x400.jpg");
+}
+
+/* Saori Hayami */
+.cc-favourites .entry-869 .cover::after {
+  content: "早見 沙織" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-869 .cover:hover:after {
+  content: "Saori Hayami" !important;
+  font-size: 16px !important;
+}
+
+/* Latifa */
+.cc-favourites .entry-152629 .cover::after {
+  content: "ラティーファ" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-152629 .cover:hover:after {
+  content: "Latifa" !important;
+  font-size: 16px !important;
+}
+
+/* Orphia */
+.cc-favourites .entry-188707 .cover::after {
+  content: "オーフィア" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-188707 .cover:hover:after {
+  content: "Orphia" !important;
+  font-size: 16px !important;
+}
+
+/* Sayo */
+.cc-favourites .entry-200661 .cover::after {
+  content: "沙世" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-200661 .cover:hover:after {
+  content: "Sayo" !important;
+  font-size: 16px !important;
+}
+
+/* Sara */
+.cc-favourites .entry-188706 .cover::after {
+  content: "サラ" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-188706 .cover:hover:after {
+  content: "Sara" !important;
+  font-size: 16px !important;
+}
+
+/* Celia Claire */
+.cc-favourites .entry-147860 .cover::after {
+  content: "セリア＝クレール" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-147860 .cover:hover:after {
+  content: "Celia Claire" !important;
+  font-size: 16px !important;
+}
+img[src*="147860"][alt="Celia Claire"] {
+  content: url("https://static.wikia.nocookie.net/seirei-gensouki/images/8/85/CeliaPic.JPG/revision/latest?cb=20190415134151");
+}
+
+/* Oda Nobunaga */
+.cc-favourites .entry-137864 .cover::after {
+  content: "織田信長" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-137864 .cover:hover:after {
+  content: "Oda Nobunaga" !important;
+  font-size: 16px !important;
+}
+img[src*="137864"][alt="Majin Archer"] {
+  content: url("https://static.wikia.nocookie.net/onepiecefanon/images/7/78/Saeko.jpg/revision/latest?cb=20200522075356");
+}
