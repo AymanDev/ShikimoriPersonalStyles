@@ -24,7 +24,7 @@ jobs:
     executor: node/default
     steps:
       - attach_workspace:
-          at: ~/project/build
+          at: ~/project
       - node/install:
           install-npm: false 
       - go/install:
