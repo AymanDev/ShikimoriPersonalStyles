@@ -20,7 +20,10 @@ jobs:
           paths:
             - build/*
             - package.json
-  publish-github-release:
+  release:
+    parameters:
+      is-pre-release:
+        type: boolean
     executor:
       name: go/default
       tag: '1.16'
@@ -43,15 +46,25 @@ jobs:
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  release:
+  main:
     jobs:
       - build
-      - publish-github-release:
+      - release:
           requires:
             - build
+          is-pre-release: false
           filters:
             branches:
               only:
                 - master
                 - /releases\/.*/
+      - release:
+          name: pre-release
+          requires:
+            - build
+          is-pre-release: true
+          filters:
+            branches:
+              only:
+                - /pre-releases\/.*/
 
