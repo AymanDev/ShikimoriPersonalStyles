@@ -113,7 +113,7 @@
 */
 @include create-card(
   "80243",
-  "Nishimiya Shouko",
+  "Shouko Nishimiya",
   "西宮 硝子",
   "https://wallpapercave.com/wp/wp4088128.png"
 );
@@ -125,7 +125,7 @@
 );
 @include create-card(
   "67065",
-  "Hikigaya Hachiman",
+  "Hachiman Hikigaya",
   "比企谷 八幡",
   "https://images4.alphacoders.com/736/thumb-1920-736321.png"
 );
@@ -150,7 +150,7 @@
 );
 @include create-card(
   "177217",
-  "Necron Misha",
+  "Misha Necron",
   "ミーシャ・ネクロン",
   "https://kawaii-mobile.com/wp-content/uploads/2020/11/Maou-Gakuin-no-Futekigousha-Misha-Necron-Sasha-Necron.Android-wallpaper-2160x1920.jpg"
 );
@@ -162,33 +162,51 @@
 );
 @include create-card(
   "127141",
-  "Shilva Noelle",
+  "Noelle Shilva",
   "ノエル・シルヴァ",
   "https://scontent-atl3-2.cdninstagram.com/v/t51.2885-15/e35/c161.0.414.414a/s320x320/117530087_1471102409742728_1975641936322730177_n.jpg?_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=108&_nc_ohc=kNV63Uo0-V4AX-nKJiV&oh=462e746f9c7d7f07cd9b4840075b16eb&oe=5F614C2A"
 );
 @include create-card(
   "143724",
-  "Charmy Papittoson",
+  "Papittoson Charmy",
   "チャーミー・パピットソン",
   "https://i.pinimg.com/originals/9e/d2/45/9ed245b3fc99ac6fd4753f9e63ca307b.png"
 );
 @include create-card(
   "127886",
-  "Voltia Luck",
+  "Luck Voltia",
   "ラック・ボルディア",
   "https://pm1.narvii.com/7251/7db9c2487f457746152c76b199ca999e39712fdcr1-1080-1018v2_hq.jpg"
 );
 @include create-card(
   "150704",
-  "Vermillion Mimosa",
+  "Mimosa Vermillion",
   "ミモザ・ヴァーミリオン",
   "https://64.media.tumblr.com/0f75ffa370660e274eb2f5ab2ffc59bf/b34bbb744edca21a-c4/s640x960/b19539f9c1cf75ed34f273a0fd300dd4bbaacb2d.jpg"
 );
 @include create-card(
   "150824",
-  "Mirizé Vladilena",
+  "Vladilena Mirizé",
   "ヴラディレーナ・ミリーゼ",
   "https://pbs.twimg.com/media/EtE0xXFW4Aca9YX.jpg"
+);
+@include create-card(
+  "172812",
+  "Mei Raiden",
+  "雷電 芽衣",
+  "https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/2286391/Japanese/2286391_Japanese_ShowKeyart_2b6a2e3c-8403-465f-8e7f-339eb84f5045.jpg"
+);
+@include create-card(
+  "177539",
+  "Ereshkigal",
+  "エレシュキガル",
+  "https://external-preview.redd.it/I4BprEbKSg7wMyGN99FiLjEnBPXQywTT4RoUK9AAHD0.jpg?auto=webp&s=10e43b4e004b49d8399b6951aa99f71a412634b2"
+);
+@include create-card(
+  "67067",
+  "Yukino Yukinoshita",
+  "雪ノ下 雪乃",
+  "https://i.pinimg.com/originals/a0/0b/40/a00b40c1713d689721799a8e729d8cf2.jpg"
 );
 
 /**
@@ -196,7 +214,7 @@
 */
 @include create-card(
   "23283",
-  "Terror in Resonance",
+  "Zankyou no Terror",
   "残響のテロル",
   "https://img1.ak.crunchyroll.com/i/spire1/866791fd95d756a9ebf3a0a51b2c6d071481246024_full.jpg"
 );
@@ -212,6 +230,18 @@
   "劇場版「Fate/stay night [Heaven's Feel] III.spring song」",
   "https://fesapusewebsite.blob.core.windows.net/fathom/b2dbab4d5bf1cd2411ab18a0a5144b83.jpg"
 );
+@include create-card(
+  "38328",
+  "Azur Lane",
+  "アズールレーン",
+  "https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/2286391/Japanese/2286391_Japanese_ShowKeyart_2b6a2e3c-8403-465f-8e7f-339eb84f5045.jpg"
+);
+@include create-card(
+  "32615",
+  "The Saga of Tanya the Evil",
+  "幼女戦記",
+  "https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/2286391/Japanese/2286391_Japanese_ShowKeyart_2b6a2e3c-8403-465f-8e7f-339eb84f5045.jpg"
+);
 
 /**
 * Manga
@@ -226,8 +256,13 @@
   "56805",
   "Koe no Katachi",
   "聲の形",
-  "https://static.wikia.nocookie.net/koenokatachi/images/2/2b/Vol1cover.jpeg/revision/latest?cb=20140419040654",
-  "A Silent Voice",
+  "https://static.wikia.nocookie.net/koenokatachi/images/2/2b/Vol1cover.jpeg/revision/latest?cb=20140419040654"
+);
+@include create-card(
+  "67615",
+  "Tate no Yuusha no Nariagari",
+  "盾の勇者の成り上がり",
+  "https://images-na.ssl-images-amazon.com/images/I/81lAIPP2XkL.jpg"
 );
 
 /**
@@ -235,81 +270,10 @@
 */
 @include create-card(
   "104039",
-  "Eighty Six",
+  "86",
   "86-エイティシックス-",
   "https://kbimages1-a.akamaihd.net/29216134-5f0b-4080-a492-4a58461f91f1/1200/1200/False/86-eighty-six-vol-4-light-novel.jpg"
 );
-
-
-/* shield hero */
-img[src*="67615"] {
-  content: url("https://images-na.ssl-images-amazon.com/images/I/81lAIPP2XkL.jpg");
-}
-.cc-favourites .entry-67615 .cover::after {
-  content: "盾の勇者の成り上がり" !important;
-  font-size: 14px !important;
-}
-.cc-favourites .entry-67615 .cover:hover:after {
-  content: "The Rising of the Shield Hero" !important;
-  font-size: 14px !important;
-}
-/* Ereshkigal*/
-img[src*="177539"] {
-  content: url("https://external-preview.redd.it/I4BprEbKSg7wMyGN99FiLjEnBPXQywTT4RoUK9AAHD0.jpg?auto=webp&s=10e43b4e004b49d8399b6951aa99f71a412634b2");
-}
-.cc-favourites .entry-177539 .cover::after {
-  content: "エレシュキガル" !important;
-  font-size: 16px !important;
-}
-.cc-favourites .entry-177539 .cover:hover:after {
-  content: "Ereshkigal" !important;
-  font-size: 16px !important;
-}
-
-/* Yukino */
-img[src*="67067"] {
-  content: url("https://i.pinimg.com/originals/a0/0b/40/a00b40c1713d689721799a8e729d8cf2.jpg");
-}
-.cc-favourites .entry-67067 .cover::after {
-  content: "雪ノ下 雪乃" !important;
-  font-size: 16px !important;
-}
-.cc-favourites .entry-67067 .cover:hover:after {
-  content: "Yukino Yukinoshita" !important;
-  font-size: 16px !important;
-}
-/* azur lane */
-img[src*="38328"] {
-  content: url("https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/2286391/Japanese/2286391_Japanese_ShowKeyart_2b6a2e3c-8403-465f-8e7f-339eb84f5045.jpg");
-}
-.cc-favourites .entry-38328 .cover::after {
-  content: "アズールレーン" !important;
-  font-size: 16px !important;
-}
-.cc-favourites .entry-38328 .cover:hover:after {
-  content: "Azur Lane" !important;
-  font-size: 16px !important;
-}
-
-/* Tanya */
-.cc-favourites .entry-32615 .cover::after {
-  content: "幼女戦記" !important;
-  font-size: 16px !important;
-}
-.cc-favourites .entry-32615 .cover:hover:after {
-  content: "The Saga of Tanya the Evil" !important;
-  font-size: 16px !important;
-}
-
-/* Mei */
-.cc-favourites .entry-172812 .cover::after {
-  content: "雷電 芽衣" !important;
-  font-size: 16px !important;
-}
-.cc-favourites .entry-172812 .cover:hover:after {
-  content: "Mei Raiden" !important;
-  font-size: 16px !important;
-}
 
 /* Shuna */
 img[src*="131943"] {
