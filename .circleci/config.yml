@@ -3,6 +3,7 @@
 version: 2.1
 orbs:
   node: circleci/node@4.7.0
+  go: circleci/go@1.7.0
 jobs:
   build:
     executor: node/default
@@ -24,15 +25,17 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/project/build
+      - go/install
       - node/install:
           install-npm: false 
       - run:
-          command: pwd  
+          command: echo "$(pwd)"  
       - run:
           name: "Publish Release on GitHub"
           command: |
+            go get github.com/tcnksm/ghr
             VERSION=$(node -pe "require(./package.json).version")
-            ghr -t ${GITHUB_TOKEN} -u ${CIRCLE_PROJECT_USERNAME} -r ${CIRCLE_PROJECT_REPONAME} -c ${CIRCLE_SHA1} -delete ${VERSION} ./build/
+            ghr -t ${GITHUB_TOKEN} -u ${CIRCLE_PROJECT_USERNAME} -r ${CIRCLE_PROJECT_REPONAME} -c ${CIRCLE_SHA1} -delete ${VERSION} .p/build/
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
