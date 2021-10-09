@@ -10,10 +10,10 @@ jobs:
       - checkout
       - node/install
       - node/install-packages:
-          override-ci-command: install --save
+          override-ci-command: npm install --save
           with-cache: false
       - run: 
-          command: npm run build 
+          command: npm run build:latest
       - persist_to_workspace:
           root: ~/
           paths:
