@@ -3,6 +3,7 @@
 version: 2.1
 orbs:
   node: circleci/node@4.7.0
+  go: circleci/go@1.7.0
 jobs:
   build:
     executor: node/default
@@ -19,13 +20,14 @@ jobs:
           paths:
             - project/build
   publish-github-release:
-    docker:
-      - image: circleci/golang:1.8
+    executor: node/default
     steps:
       - attach_workspace:
           at: ~/project/build
       - node/install:
           install-npm: false 
+      - go/install:
+          version: '1.10' 
       - run:
           name: "Install GHR"
           command: go get github.com/tcnksm/ghr
