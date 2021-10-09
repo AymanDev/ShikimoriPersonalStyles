@@ -10,8 +10,8 @@ jobs:
       - checkout
       - node/install
       - node/install-packages
-      - run:
-          command: npm run build
+      - run: 
+          command: npm run build 
       - persist_to_workspace:
           root: ~/
           paths:
