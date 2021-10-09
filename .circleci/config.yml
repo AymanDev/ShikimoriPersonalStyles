@@ -21,7 +21,9 @@ jobs:
             - build/*
             - package.json
   publish-github-release:
-    executor: node/default
+    executor:
+      name: go/default
+      tag: '1.16'
     steps:
       - attach_workspace:
           at: ~/project
