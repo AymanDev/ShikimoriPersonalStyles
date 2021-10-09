@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cross-var sass ./src/index.scss ./build/$VERSION/index-$VERSION.css",
+    "build": "cross-var sass ./src/index.scss ./build/index-$VERSION.css",
     "build:version": "cross-var cross-env VERSION=$npm_package_version npm run build ",
     "build:latest": "cross-env VERSION=latest npm run build",
     "build:all": "npm run build:version && npm run build:latest"
