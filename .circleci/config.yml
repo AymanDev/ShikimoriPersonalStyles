@@ -27,6 +27,8 @@ jobs:
       - node/install:
           install-npm: false 
       - run:
+          command: pwd  
+      - run:
           name: "Publish Release on GitHub"
           command: |
             VERSION=$(node -pe "require(./package.json).version")
