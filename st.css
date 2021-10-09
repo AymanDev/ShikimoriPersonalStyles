@@ -1,17 +1,17 @@
 .bar.vertical .line {
-	overflow: visible;
+  overflow: visible;
 }
 .activity .graph.vertical .line .bar {
-	animation-name: none;
+  animation-name: none;
 }
 
 .bar.vertical .line .bar-container .value {
-	display: block;
-  	margin-bottom: -12px;
+  display: block;
+  margin-bottom: -12px;
 }
 
 .bar.vertical .line .x_label {
-	margin-bottom: -12px;
+  margin-bottom: -12px;
 }
 
 .cc-favourites {
@@ -57,12 +57,12 @@
 }
 
 .profile-content .c-column.c-left .activity::after {
-  	display: block;
-	content: '';
-  	width: 100%;
-  	height: 1px;
-  	background: rgba(var(--white-color), 0.5);
-    margin-top: 15px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: rgba(var(--white-color), 0.5);
+  margin-top: 15px;
 }
 
 .profile-content .c-column.c-right {
@@ -590,6 +590,7 @@ img[src*="137864"][alt="Majin Archer"] {
 }
 img[src*="91605"][alt="Julie Sigtuna"] {
   content: url("https://www.less-real.com/imagevault/uploaded/images/part6/Julie-Sigtuna-28225.jpg");
-  object-fit: cover;
+}
+.cc-favourites img[src*="91605"][alt="Julie Sigtuna"] {
   transform: scale(1.8) translateY(75px);
 }
