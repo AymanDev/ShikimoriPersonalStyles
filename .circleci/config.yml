@@ -16,9 +16,10 @@ jobs:
       - run: 
           command: npm run build:latest
       - persist_to_workspace:
-          root: ~/
+          root: ~/project/
           paths:
-            - project/
+            - build/*
+            - package.json
   publish-github-release:
     executor: node/default
     steps:
@@ -29,10 +30,8 @@ jobs:
       - go/install:
           version: '1.10' 
       - run:
-          name: "Install GHR"
+          name: "Install GHR latest"
           command: go get github.com/tcnksm/ghr
-      - run:
-          command: echo "$(ls) $(pwd)"
       - run:
           name: "Publish Release on GitHub"
           command: |
