@@ -32,6 +32,8 @@ jobs:
           name: "Install GHR"
           command: go get github.com/tcnksm/ghr
       - run:
+          command: echo "$(ls) $(pwd)"
+      - run:
           name: "Publish Release on GitHub"
           command: |
             VERSION=$(node -pe "require('./package.json').version")
