@@ -1,10 +1,13 @@
 {
   "name": "shikimoripersonalstyles",
-  "version": "1.0.0",
+  "version": "0.0.1-SNAPSHOT",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass ./src/index.scss ./build/index.css"
+    "build": "cross-var sass ./src/index.scss ./build/$VERSION/index-$VERSION.css",
+    "build:version": "cross-var cross-env VERSION=$npm_package_version npm run build ",
+    "build:latest": "cross-env VERSION=latest npm run build",
+    "build:all": "npm run build:version && npm run build:latest"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,9 @@
   "homepage": "https://github.com/AymanDev/ShikimoriPersonalStyles#readme",
   "dependencies": {
     "sass": "^1.42.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "cross-var": "^1.1.0"
   }
 }
