@@ -24,7 +24,8 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/project/build
-      - node/install
+      - node/install:
+          install-npm: false 
       - run:
           name: "Publish Release on GitHub"
           command: |
