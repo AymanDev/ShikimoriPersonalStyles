@@ -20,16 +20,15 @@ jobs:
           paths:
             - project/build
   publish-github-release:
-    docker:
-      - image: cibuilds/github:0.10
+    executor: node/default
     steps:
       - attach_workspace:
           at: ~/project/build
-      - go/install
       - node/install:
           install-npm: false 
       - run:
           command: echo "$(pwd)"  
+      - go/install
       - run:
           name: "Publish Release on GitHub"
           command: |
