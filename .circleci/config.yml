@@ -2,13 +2,13 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 orbs:
-  node: circleci/node@3.0.0
+  node: circleci/node@4.7.0
 jobs:
   build:
     executor: node/default
     steps:
       - checkout
-      - node/install-npm
+      - node/install
       - node/install-packages
       - run:
           command: npm run build
