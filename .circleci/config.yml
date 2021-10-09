@@ -17,13 +17,13 @@ jobs:
       - persist_to_workspace:
           root: ~/
           paths:
-            - artifacts
+            - project/ShikimoriPersonalStyles/build
   publish-github-release:
     docker:
       - image: circleci/golang:1.8
     steps:
       - attach_workspace:
-          at: ~/artifacts
+          at: ~/project/ShikimoriPersonalStyles
       - run:
           name: "Publish Release on GitHub"
           command: |
