@@ -9,7 +9,8 @@ jobs:
     steps:
       - checkout
       - node/install
-      - node/install-packages
+      - node/install-packages:
+          with-cache: false
       - run: 
           command: npm run build 
       - persist_to_workspace:
