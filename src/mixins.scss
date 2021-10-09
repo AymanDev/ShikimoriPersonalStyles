@@ -1,0 +1,18 @@
+@mixin create-card(
+  $id,
+  $en-name,
+  $jp-name,
+  $img-url,
+  $custom-en-name: $en-name
+) {
+  /* #{$en-name} */
+  .cc-favourites .entry-#{$id} .cover::after {
+    content: "#{$jp-name}" !important;
+  }
+  .cc-favourites .entry-#{$id} .cover:hover:after {
+    content: "#{$custom-en-name}" !important;
+  }
+  img[src*="#{$id}"][alt="#{$en-name}"] {
+    content: url("#{$img-url}");
+  }
+}

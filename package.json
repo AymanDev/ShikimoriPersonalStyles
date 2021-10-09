@@ -1,0 +1,22 @@
+{
+  "name": "shikimoripersonalstyles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass ./src/index.scss ./build/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AymanDev/ShikimoriPersonalStyles.git"
+  },
+  "author": "AymanDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AymanDev/ShikimoriPersonalStyles/issues"
+  },
+  "homepage": "https://github.com/AymanDev/ShikimoriPersonalStyles#readme",
+  "dependencies": {
+    "sass": "^1.42.1"
+  }
+}

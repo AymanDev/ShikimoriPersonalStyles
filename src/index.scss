@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 .bar.vertical .line {
   overflow: visible;
 }
@@ -106,234 +108,138 @@
   font-size: 16px;
 }
 
-/* Nishimiya Shouko */
-img[src*="80243"] {
-  object-position: top !important;
-  content: url("https://wallpapercave.com/wp/wp4088128.png");
-}
-.cc-favourites .entry-80243 .cover::after {
-  content: "西宮 硝子";
-}
-.cc-favourites .entry-80243 .cover:hover:after {
-  content: "Nishimiya Shouko";
-}
+/**
+* Characters
+*/
+@include create-card(
+  "80243",
+  "Nishimiya Shouko",
+  "西宮 硝子",
+  "https://wallpapercave.com/wp/wp4088128.png"
+);
+@include create-card(
+  "118763",
+  "Rem",
+  "レム",
+  "https://pm1.narvii.com/6231/53c047f79ef9468817f876b39eda2dfdd601bf79_hq.jpg"
+);
+@include create-card(
+  "67065",
+  "Hikigaya Hachiman",
+  "比企谷 八幡",
+  "https://images4.alphacoders.com/736/thumb-1920-736321.png"
+);
+@include create-card(
+  "136529",
+  "Mumei",
+  "無名 (穂積)",
+  "https://i.imgur.com/YOP6LKt.png",
+  "Mumei (Hozumi)"
+);
+@include create-card(
+  "146736",
+  "Kochou Shinobu",
+  "胡蝶 しのぶ",
+  "https://i.pinimg.com/originals/4a/fb/b1/4afbb153c45c598caee857c3c1901d34.png"
+);
+@include create-card(
+  "97761",
+  "Jibril",
+  "ジブリール",
+  "https://i.ytimg.com/vi/8LQacPpYjLU/maxresdefault.jpg"
+);
+@include create-card(
+  "177217",
+  "Necron Misha",
+  "ミーシャ・ネクロン",
+  "https://kawaii-mobile.com/wp-content/uploads/2020/11/Maou-Gakuin-no-Futekigousha-Misha-Necron-Sasha-Necron.Android-wallpaper-2160x1920.jpg"
+);
+@include create-card(
+  "176725",
+  "Purifier",
+  "ピュリファイアー",
+  "https://i.imgur.com/sPnqFsx.jpg"
+);
+@include create-card(
+  "127141",
+  "Shilva Noelle",
+  "ノエル・シルヴァ",
+  "https://scontent-atl3-2.cdninstagram.com/v/t51.2885-15/e35/c161.0.414.414a/s320x320/117530087_1471102409742728_1975641936322730177_n.jpg?_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=108&_nc_ohc=kNV63Uo0-V4AX-nKJiV&oh=462e746f9c7d7f07cd9b4840075b16eb&oe=5F614C2A"
+);
+@include create-card(
+  "143724",
+  "Charmy Papittoson",
+  "チャーミー・パピットソン",
+  "https://i.pinimg.com/originals/9e/d2/45/9ed245b3fc99ac6fd4753f9e63ca307b.png"
+);
+@include create-card(
+  "127886",
+  "Voltia Luck",
+  "ラック・ボルディア",
+  "https://pm1.narvii.com/7251/7db9c2487f457746152c76b199ca999e39712fdcr1-1080-1018v2_hq.jpg"
+);
+@include create-card(
+  "150704",
+  "Vermillion Mimosa",
+  "ミモザ・ヴァーミリオン",
+  "https://64.media.tumblr.com/0f75ffa370660e274eb2f5ab2ffc59bf/b34bbb744edca21a-c4/s640x960/b19539f9c1cf75ed34f273a0fd300dd4bbaacb2d.jpg"
+);
+@include create-card(
+  "150824",
+  "Mirizé Vladilena",
+  "ヴラディレーナ・ミリーゼ",
+  "https://pbs.twimg.com/media/EtE0xXFW4Aca9YX.jpg"
+);
 
-/* Remu */
-img[src*="118763"] {
-  content: url("https://pm1.narvii.com/6231/53c047f79ef9468817f876b39eda2dfdd601bf79_hq.jpg");
-}
-.cc-favourites .entry-118763 .cover::after {
-  content: "レム";
-}
-.cc-favourites .entry-118763 .cover:hover:after {
-  content: "Rem";
-}
+/**
+* Anime
+*/
+@include create-card(
+  "23283",
+  "Terror in Resonance",
+  "残響のテロル",
+  "https://img1.ak.crunchyroll.com/i/spire1/866791fd95d756a9ebf3a0a51b2c6d071481246024_full.jpg"
+);
+@include create-card(
+  "34544",
+  "Koutetsujou no Kabaneri Movie 3: Unato Kessen",
+  "甲鉄城のカバネリ 〜海門決戦〜",
+  "https://i.imgur.com/0jPwVzn.jpg"
+);
+@include create-card(
+  "33050",
+  "Fate/stay night Movie: Heaven's Feel - III. Spring Song",
+  "劇場版「Fate/stay night [Heaven's Feel] III.spring song」",
+  "https://fesapusewebsite.blob.core.windows.net/fathom/b2dbab4d5bf1cd2411ab18a0a5144b83.jpg"
+);
 
-/* Hikigaya Hachiman */
-img[src*="67065"] {
-  content: url(https://images4.alphacoders.com/736/thumb-1920-736321.png);
-}
-.cc-favourites .entry-67065 .cover::after {
-  content: "比企谷 八幡";
-}
-.cc-favourites .entry-67065 .cover:hover:after {
-  content: "Hikigaya Hachiman";
-}
+/**
+* Manga
+*/
+@include create-card(
+  "23390",
+  "Attack on Titan",
+  "進撃の巨人",
+  "https://i.pinimg.com/736x/a6/aa/42/a6aa42b57ab861bce83e728bd5454e9d.jpg"
+);
+@include create-card(
+  "56805",
+  "Koe no Katachi",
+  "聲の形",
+  "https://static.wikia.nocookie.net/koenokatachi/images/2/2b/Vol1cover.jpeg/revision/latest?cb=20140419040654",
+  "A Silent Voice",
+);
 
-/* Mumei (Hozumi) */
-img[src*="136529"] {
-  content: url("https://i.imgur.com/YOP6LKt.png");
-}
-.cc-favourites .entry-136529 .cover::after {
-  content: "無名 (穂積)";
-}
-.cc-favourites .entry-136529 .cover:hover:after {
-  content: "Mumei (Hozumi)";
-}
+/**
+* Ranobe
+*/
+@include create-card(
+  "104039",
+  "Eighty Six",
+  "86-エイティシックス-",
+  "https://kbimages1-a.akamaihd.net/29216134-5f0b-4080-a492-4a58461f91f1/1200/1200/False/86-eighty-six-vol-4-light-novel.jpg"
+);
 
-/* Kochou Shinobu */
-img[src*="146736"] {
-  content: url("https://i.pinimg.com/originals/4a/fb/b1/4afbb153c45c598caee857c3c1901d34.png");
-}
-.cc-favourites .entry-146736 .cover::after {
-  content: "胡蝶 しのぶ";
-}
-.cc-favourites .entry-146736 .cover:hover:after {
-  content: "Kochou Shinobu";
-}
-
-/* Jibril */
-img[src*="97761"] {
-  content: url(https://i.ytimg.com/vi/8LQacPpYjLU/maxresdefault.jpg);
-}
-.cc-favourites .entry-97761 .cover::after {
-  content: "ジブリール";
-}
-.cc-favourites .entry-97761 .cover:hover:after {
-  content: "Jibril";
-}
-
-/* Necron Misha */
-img[src*="177217"] {
-  content: url("https://kawaii-mobile.com/wp-content/uploads/2020/11/Maou-Gakuin-no-Futekigousha-Misha-Necron-Sasha-Necron.Android-wallpaper-2160x1920.jpg");
-  object-position: left !important;
-}
-.cc-favourites .entry-177217 .cover::after {
-  content: "ミーシャ・ネクロン";
-}
-.cc-favourites .entry-177217 .cover:hover:after {
-  content: "Necron Misha";
-}
-
-/* Purifier */
-img[src*="176725"] {
-  content: url(https://i.imgur.com/sPnqFsx.jpg);
-}
-.cc-favourites .entry-176725 .cover::after {
-  content: "ピュリファイアー";
-}
-.cc-favourites .entry-176725 .cover:hover:after {
-  content: "Purifier";
-}
-
-/* Shilva Noelle */
-img[src*="127141"] {
-  content: url(https://scontent-atl3-2.cdninstagram.com/v/t51.2885-15/e35/c161.0.414.414a/s320x320/117530087_1471102409742728_1975641936322730177_n.jpg?_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_cat=108&_nc_ohc=kNV63Uo0-V4AX-nKJiV&oh=462e746f9c7d7f07cd9b4840075b16eb&oe=5F614C2A);
-}
-.cc-favourites .entry-127141 .cover::after {
-  content: "ノエル・シルヴァ";
-}
-.cc-favourites .entry-127141 .cover:hover:after {
-  content: "Shilva Noelle";
-}
-
-/* Charmy Papittoson */
-img[src*="143724"] {
-  content: url(https://i.pinimg.com/originals/9e/d2/45/9ed245b3fc99ac6fd4753f9e63ca307b.png);
-}
-.cc-favourites .entry-143724 .cover::after {
-  content: "チャーミー・パピットソン";
-  font-size: 13px;
-}
-.cc-favourites .entry-143724 .cover:hover:after {
-  content: "Charmy Papittoson";
-  font-size: 16px;
-}
-
-/* Voltia Luck */
-img[src*="127886"] {
-  content: url(https://pm1.narvii.com/7251/7db9c2487f457746152c76b199ca999e39712fdcr1-1080-1018v2_hq.jpg);
-}
-.cc-favourites .entry-127886 .cover::after {
-  content: "ラック・ボルディア";
-}
-.cc-favourites .entry-127886 .cover:hover:after {
-  content: "Voltia Luck";
-}
-
-/* Vermillion Mimosa */
-img[src*="150704"] {
-  content: url("https://64.media.tumblr.com/0f75ffa370660e274eb2f5ab2ffc59bf/b34bbb744edca21a-c4/s640x960/b19539f9c1cf75ed34f273a0fd300dd4bbaacb2d.jpg");
-}
-.cc-favourites .entry-150704 .cover::after {
-  content: "ミモザ・ヴァーミリオン";
-  font-size: 13px;
-}
-.cc-favourites .entry-150704 .cover:hover:after {
-  content: "Vermillion Mimosa";
-  font-size: 16px;
-}
-
-/* Mirizé Vladilena */
-img[src*="150824"] {
-  content: url("https://pbs.twimg.com/media/EtE0xXFW4Aca9YX.jpg");
-}
-.cc-favourites .entry-150824 .cover::after {
-  content: "ヴラディレーナ・ミリーゼ";
-  font-size: 12px;
-}
-.cc-favourites .entry-150824 .cover:hover:after {
-  content: "Mirizé Vladilena";
-  font-size: 16px;
-}
-
-/* Terror */
-img[src*="23283"] {
-  content: url("https://img1.ak.crunchyroll.com/i/spire1/866791fd95d756a9ebf3a0a51b2c6d071481246024_full.jpg");
-}
-.cc-favourites .entry-23283 .cover::after {
-  content: "残響のテロル" !important;
-  font-size: 16px !important;
-}
-.cc-favourites .entry-23283 .cover:hover:after {
-  content: "Terror in Resonance" !important;
-  font-size: 16px !important;
-}
-
-/* Kabaneri */
-img[src*="34544"] {
-  content: url("https://i.imgur.com/0jPwVzn.jpg");
-}
-.cc-favourites .entry-34544 .cover::after {
-  content: "甲鉄城のカバネリ 〜海門決戦〜" !important;
-  font-size: 13px !important;
-}
-.cc-favourites .entry-34544 .cover:hover:after {
-  content: "Koutetsujou no Kabaneri Movie 3: Unato Kessen" !important;
-  font-size: 13px !important;
-}
-
-/* 86 */
-img[src*="104039"] {
-  content: url("https://kbimages1-a.akamaihd.net/29216134-5f0b-4080-a492-4a58461f91f1/1200/1200/False/86-eighty-six-vol-4-light-novel.jpg");
-}
-.cc-favourites .entry-104039 .cover::after {
-  content: "86-エイティシックス-" !important;
-  font-size: 16px !important;
-}
-.cc-favourites .entry-104039 .cover:hover:after {
-  content: "Eighty Six" !important;
-  font-size: 16px !important;
-}
-
-/* Fate */
-img[src*="33050"] {
-  content: url("https://fesapusewebsite.blob.core.windows.net/fathom/b2dbab4d5bf1cd2411ab18a0a5144b83.jpg");
-}
-.cc-favourites .entry-33050 .cover::after {
-  content: "劇場版「Fate/stay night [Heaven's Feel] III.spring song」" !important;
-  font-size: 10px !important;
-}
-.cc-favourites .entry-33050 .cover:hover:after {
-  content: "Fate/stay night Movie: Heaven's Feel - III. Spring Song" !important;
-  font-size: 13px !important;
-}
-
-/* attack on titan */
-img[src*="23390"] {
-  content: url("https://i.pinimg.com/736x/a6/aa/42/a6aa42b57ab861bce83e728bd5454e9d.jpg");
-}
-.cc-favourites .entry-23390 .cover::after {
-  content: "進撃の巨人" !important;
-  font-size: 16px !important;
-}
-.cc-favourites .entry-23390 .cover:hover:after {
-  content: "Attack on Titan" !important;
-  font-size: 16px !important;
-}
-
-/* silent voice */
-img[src*="56805"] {
-  content: url("https://static.wikia.nocookie.net/koenokatachi/images/2/2b/Vol1cover.jpeg/revision/latest?cb=20140419040654");
-}
-.cc-favourites .entry-56805 .cover::after {
-  content: "聲の形" !important;
-  font-size: 16px !important;
-}
-.cc-favourites .entry-56805 .cover:hover:after {
-  content: "A Silent Voice" !important;
-  font-size: 16px !important;
-}
 
 /* shield hero */
 img[src*="67615"] {
