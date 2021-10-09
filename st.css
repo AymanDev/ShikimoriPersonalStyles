@@ -102,6 +102,8 @@
   background: rgba(var(--small-rating), 0.8);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+
+  font-size: 16px;
 }
 
 /* Nishimiya Shouko */
@@ -575,4 +577,19 @@ img[src*="147860"][alt="Celia Claire"] {
 }
 img[src*="137864"][alt="Majin Archer"] {
   content: url("https://static.wikia.nocookie.net/onepiecefanon/images/7/78/Saeko.jpg/revision/latest?cb=20200522075356");
+}
+
+/* Julie Sigtuna */
+.cc-favourites .entry-91605 .cover::after {
+  content: "ユリエ・シグトゥーナ" !important;
+  font-size: 16px !important;
+}
+.cc-favourites .entry-91605 .cover:hover:after {
+  content: "Julie Sigtuna" !important;
+  font-size: 16px !important;
+}
+img[src*="91605"][alt="Julie Sigtuna"] {
+  content: url("https://www.less-real.com/imagevault/uploaded/images/part6/Julie-Sigtuna-28225.jpg");
+  object-fit: cover;
+  transform: scale(1.8) translateY(75px);
 }
