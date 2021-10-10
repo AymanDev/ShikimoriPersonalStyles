@@ -1,0 +1,7 @@
+@function get-favorite-card-selector($id) {
+  @return ".cc-favourites .entry-#{$id}";
+}
+
+@function get-favorite-card-name-selector($id) {
+    @return "#{get-favorite-card-selector($id)} .cover::after";
+}

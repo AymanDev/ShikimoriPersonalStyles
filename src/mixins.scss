@@ -1,3 +1,5 @@
+@import "./funcions.scss";
+
 @mixin create-card(
   $id,
   $en-name,
@@ -5,11 +7,14 @@
   $img-url,
   $custom-en-name: $en-name
 ) {
+
+  $selector: get-favorite-card-selector($id);
+
   /* #{$en-name} */
-  .cc-favourites .entry-#{$id} .cover::after {
+  #{$selector} .cover::after {
     content: "#{$jp-name}" !important;
   }
-  .cc-favourites .entry-#{$id} .cover:hover:after {
+  #{$selector} .cover:hover:after {
     content: "#{$custom-en-name}" !important;
   }
   img[src*="#{$id}"][alt="#{$en-name}"] {

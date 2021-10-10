@@ -1,4 +1,5 @@
 @import "./mixins.scss";
+@import "./functions.scss";
 
 .bar.vertical .line {
   overflow: visible;
@@ -230,6 +231,10 @@
   "劇場版「Fate/stay night [Heaven's Feel] III.spring song」",
   "https://fesapusewebsite.blob.core.windows.net/fathom/b2dbab4d5bf1cd2411ab18a0a5144b83.jpg"
 );
+#{get-favorite-card-name-selector("33050")} {
+  font-size: 13px;
+}
+
 @include create-card(
   "38328",
   "Azur Lane",
