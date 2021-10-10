@@ -237,7 +237,7 @@
   "https://fesapusewebsite.blob.core.windows.net/fathom/b2dbab4d5bf1cd2411ab18a0a5144b83.jpg"
 );
 #{get-favorite-card-name-selector("33050")} {
-  font-size: fluid-type(11px, 13px);
+  @include fluid-type(11px, 13px);
 }
 
 @include create-card(
