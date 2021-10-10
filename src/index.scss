@@ -2,7 +2,7 @@
 @import "./mixins.scss";
 @import "./functions.scss";
 
-.l-footer::after {
+.l-footer .copyright::after {
   content: "v#{$VERSION}";
 }
 
