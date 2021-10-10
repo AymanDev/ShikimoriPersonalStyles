@@ -40,7 +40,7 @@ jobs:
       - run:
           name: "Publish Release on GitHub"
           command: |
-            PARAMS=$(node -pe "if(<< parameters.is-pre-release >>) return '-prerelease'; else return '';")
+            PARAMS=$(node -pe "<< parameters.is-pre-release >> ? '-prerelease' : ''")
             VERSION=$(node -pe "require('./package.json').version")
             ghr -t ${GITHUB_TOKEN} -u ${CIRCLE_PROJECT_USERNAME} -r ${CIRCLE_PROJECT_REPONAME} -c ${CIRCLE_SHA1} ${PARAMS} -delete ${VERSION} ./build/
 
