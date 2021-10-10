@@ -220,7 +220,12 @@
   "シュナ",
   "https://i.pinimg.com/originals/97/8a/7f/978a7fd0522b7cbe7489c9f008501d30.png"
 );
-@include create-card("179800", "Hinata Sakaguchi", "坂口 日向");
+@include create-card(
+  "179800",
+  "Hinata Sakaguchi",
+  "坂口 日向",
+  "https://i.imgur.com/4KWYGwq.jpg"
+);
 @include create-card(
   "502",
   "Rider",
@@ -240,12 +245,12 @@
   "https://i.imgur.com/3SCupXs.jpeg"
 );
 @include create-card(
-  "174387",
+  "150596",
   "Pieck Finger",
   "ピーク・フィンガー",
   "https://pbs.twimg.com/profile_images/1376344735086911488/68j_ssaE_400x400.jpg"
 );
-@include create-card("869", "Latifa", "ラティーファ");
+@include create-card("152629", "Latifa", "ラティーファ");
 @include create-card("188707", "Orphia", "オーフィア");
 @include create-card("200661", "Sayo", "沙世");
 @include create-card("188706", "Sara", "サラ");
@@ -343,3 +348,8 @@
   "86-エイティシックス-",
   "https://kbimages1-a.akamaihd.net/29216134-5f0b-4080-a492-4a58461f91f1/1200/1200/False/86-eighty-six-vol-4-light-novel.jpg"
 );
+
+/**
+* Person
+*/
+@include create-card("869", "Saori Hayami", "早見 沙織");
