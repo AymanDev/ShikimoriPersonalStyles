@@ -1,12 +1,12 @@
 {
   "name": "shikimoripersonalstyles",
-  "version": "0.0.1-SNAPSHOT",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cross-var sass ./src/index.scss ./build/index-$VERSION.css",
-    "build:version": "cross-var cross-env VERSION=$npm_package_version npm run build ",
-    "build:latest": "cross-env VERSION=latest npm run build",
+    "build": "cross-var node build.js",
+    "build:version": "cross-var cross-env PACKAGE_VERSION=$npm_package_version VERSION=$npm_package_version npm run build ",
+    "build:latest": "cross-env VERSION=latest PACKAGE_VERSION=$npm_package_version npm run build",
     "build:all": "npm run build:version && npm run build:latest"
   },
   "repository": {
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "cross-var": "^1.1.0"
+    "cross-var": "^1.1.0",
+    "sass-migrator": "^1.5.2"
   }
 }

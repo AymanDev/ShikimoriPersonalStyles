@@ -1,5 +1,10 @@
+@use "sass:string";
 @import "./mixins.scss";
 @import "./functions.scss";
+
+.l-footer .copyright::after {
+  content: "v#{$VERSION}";
+}
 
 .bar.vertical .line {
   overflow: visible;
@@ -121,7 +126,7 @@
   "80243",
   "Shouko Nishimiya",
   "西宮 硝子",
-  "https://wallpapercave.com/wp/wp4088128.png"
+  "https://i.imgur.com/OC9hFDU.png"
 );
 @include create-card(
   "118763",
@@ -158,7 +163,7 @@
   "177217",
   "Misha Necron",
   "ミーシャ・ネクロン",
-  "https://kawaii-mobile.com/wp-content/uploads/2020/11/Maou-Gakuin-no-Futekigousha-Misha-Necron-Sasha-Necron.Android-wallpaper-2160x1920.jpg"
+  "https://i1.sndcdn.com/artworks-ft8SBBnMFbwKdKm8-18WBJA-t500x500.jpg"
 );
 @include create-card(
   "176725",
@@ -220,7 +225,12 @@
   "シュナ",
   "https://i.pinimg.com/originals/97/8a/7f/978a7fd0522b7cbe7489c9f008501d30.png"
 );
-@include create-card("179800", "Hinata Sakaguchi", "坂口 日向");
+@include create-card(
+  "179800",
+  "Hinata Sakaguchi",
+  "坂口 日向",
+  "https://i.imgur.com/4KWYGwq.jpg"
+);
 @include create-card(
   "502",
   "Rider",
@@ -240,12 +250,12 @@
   "https://i.imgur.com/3SCupXs.jpeg"
 );
 @include create-card(
-  "174387",
+  "150596",
   "Pieck Finger",
   "ピーク・フィンガー",
   "https://pbs.twimg.com/profile_images/1376344735086911488/68j_ssaE_400x400.jpg"
 );
-@include create-card("869", "Latifa", "ラティーファ");
+@include create-card("152629", "Latifa", "ラティーファ");
 @include create-card("188707", "Orphia", "オーフィア");
 @include create-card("200661", "Sayo", "沙世");
 @include create-card("188706", "Sara", "サラ");
@@ -259,7 +269,7 @@
   "137864",
   "Majin Archer",
   "織田信長",
-  "https://static.wikia.nocookie.net/seirei-gensouki/images/8/85/CeliaPic.JPG/revision/latest?cb=20190415134151",
+  "https://static.wikia.nocookie.net/onepiecefanon/images/7/78/Saeko.jpg/revision/latest?cb=20200522075356",
   "Oda Nobunaga"
 );
 @include create-card(
@@ -267,6 +277,12 @@
   "Julie Sigtuna",
   "ユリエ・シグトゥーナ",
   "https://i.imgur.com/IatFrYW.png"
+);
+@include create-card(
+  "117225",
+  "Megumin",
+  "めぐみん",
+  "https://64.media.tumblr.com/eaf9960b4d40e6874d083f88d33e689c/808f16443f720a57-39/s1280x1920/fa0eec46ba12d6bfe8e752547c267cf735cb8b1d.jpg"
 );
 
 /**
@@ -343,3 +359,8 @@
   "86-エイティシックス-",
   "https://kbimages1-a.akamaihd.net/29216134-5f0b-4080-a492-4a58461f91f1/1200/1200/False/86-eighty-six-vol-4-light-novel.jpg"
 );
+
+/**
+* Person
+*/
+@include create-card("869", "Saori Hayami", "早見 沙織");

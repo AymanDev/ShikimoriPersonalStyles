@@ -5,7 +5,7 @@
   $id,
   $en-name,
   $jp-name,
-  $img-url: null,
+  $img-url: "null",
   $custom-en-name: $en-name
 ) {
   $selector: get-favorite-card-selector($id);
@@ -17,7 +17,7 @@
   #{$selector} .cover:hover:after {
     content: "#{$custom-en-name}" !important;
   }
-  @if #{$img-url} == null {
+  @if $img-url != "null" {
     img[src*="#{$id}"][alt="#{$en-name}"] {
       content: url("#{$img-url}");
     }
@@ -32,11 +32,11 @@
 ) {
   font-size: calc(
     #{$min-font-size} + #{(
-        math.div($max-font-size, ($max-font-size * 0 + 1)) -
-          math.div($min-font-size, ($min-font-size * 0 + 1))
-      )} * (math.div(100vw - #{$lower-range}), #{(
-            math.div($upper-range, ($upper-range * 0 + 1)) -
-              math.div($lower-range, ($lower-range * 0 + 1))
+        math.div($max-font-size, $max-font-size * 0 + 1) -
+          math.div($min-font-size, $min-font-size * 0 + 1)
+      )} * ((100vw - #{$lower-range}) / #{(
+            math.div($upper-range, $upper-range * 0 + 1) -
+              math.div($lower-range, $lower-range * 0 + 1)
           )})
   );
 
