@@ -9,10 +9,12 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - node/install
+      - node/install:
+          npm-version: '8.0.0' 
+          node-version: '16.11.1' 
       - node/install-packages:
+          with-cache: false 
           override-ci-command: npm install --save
-          with-cache: false
       - run: 
           command: npm run build:all
       - persist_to_workspace:
