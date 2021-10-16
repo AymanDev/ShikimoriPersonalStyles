@@ -9,7 +9,8 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - node/install
+      - node/install:
+          lts: true
       - node/install-packages:
           override-ci-command: npm install --save
       - run: 
