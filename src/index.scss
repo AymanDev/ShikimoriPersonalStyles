@@ -296,6 +296,12 @@
   "ナーベラル・ガンマ",
   "https://cdnb.artstation.com/p/assets/images/images/020/684/943/large/mitsu-art-narberal-finalv1-01-wm.jpg"
 );
+@include create-card(
+  "65239",
+  "Esdeath",
+  "エスデス",
+  "https://cs10.pikabu.ru/post_img/2019/10/17/10/1571334098197731034.jpg"
+);
 
 /**
 * Anime
@@ -321,7 +327,6 @@
 #{get-favorite-card-name-selector("33050")} {
   @include fluid-type(11px, 13px);
 }
-
 @include create-card(
   "38328",
   "Azur Lane",
