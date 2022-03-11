@@ -135,7 +135,13 @@
   "比企谷 八幡",
   "https://images4.alphacoders.com/736/thumb-1920-736321.png"
 );
-@include create-card("136529", "Mumei", "無名 (穂積)", "https://i.imgur.com/YOP6LKt.png", "Mumei (Hozumi)");
+@include create-card(
+  "136529",
+  "Mumei",
+  "無名 (穂積)",
+  "https://cs10.pikabu.ru/post_img/2019/05/18/11/1558206026140323329.jpg",
+  "Mumei (Hozumi)"
+);
 @include create-card(
   "146736",
   "Kochou Shinobu",
