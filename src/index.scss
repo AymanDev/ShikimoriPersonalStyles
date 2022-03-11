@@ -122,17 +122,12 @@
 /**
 * Characters
 */
-@include create-card(
-  "80243",
-  "Shouko Nishimiya",
-  "西宮 硝子",
-  "https://i.imgur.com/OC9hFDU.png"
-);
+@include create-card("80243", "Shouko Nishimiya", "西宮 硝子", "https://i.imgur.com/OC9hFDU.png");
 @include create-card(
   "118763",
   "Rem",
   "レム",
-  "https://pm1.narvii.com/6231/53c047f79ef9468817f876b39eda2dfdd601bf79_hq.jpg"
+  "https://cs4.pikabu.ru/post_img/big/2016/07/21/10/1469119610199778612.jpg"
 );
 @include create-card(
   "67065",
@@ -140,37 +135,21 @@
   "比企谷 八幡",
   "https://images4.alphacoders.com/736/thumb-1920-736321.png"
 );
-@include create-card(
-  "136529",
-  "Mumei",
-  "無名 (穂積)",
-  "https://i.imgur.com/YOP6LKt.png",
-  "Mumei (Hozumi)"
-);
+@include create-card("136529", "Mumei", "無名 (穂積)", "https://i.imgur.com/YOP6LKt.png", "Mumei (Hozumi)");
 @include create-card(
   "146736",
   "Kochou Shinobu",
   "胡蝶 しのぶ",
   "https://i.pinimg.com/originals/4a/fb/b1/4afbb153c45c598caee857c3c1901d34.png"
 );
-@include create-card(
-  "97761",
-  "Jibril",
-  "ジブリール",
-  "https://i.ytimg.com/vi/8LQacPpYjLU/maxresdefault.jpg"
-);
+@include create-card("97761", "Jibril", "ジブリール", "https://i.ytimg.com/vi/8LQacPpYjLU/maxresdefault.jpg");
 @include create-card(
   "177217",
   "Misha Necron",
   "ミーシャ・ネクロン",
   "https://i1.sndcdn.com/artworks-ft8SBBnMFbwKdKm8-18WBJA-t500x500.jpg"
 );
-@include create-card(
-  "176725",
-  "Purifier",
-  "ピュリファイアー",
-  "https://i.imgur.com/sPnqFsx.jpg"
-);
+@include create-card("176725", "Purifier", "ピュリファイアー", "https://i.imgur.com/sPnqFsx.jpg");
 @include create-card(
   "127141",
   "Noelle Shilva",
@@ -199,7 +178,7 @@
   "150824",
   "Vladilena Milizé",
   "ヴラディレーナ・ミリーゼ",
-  "https://pbs.twimg.com/media/EtE0xXFW4Aca9YX.jpg"
+  "https://static.zerochan.net/Vladilena.Miliz%C3%A9.full.3377281.jpg"
 );
 @include create-card(
   "172812",
@@ -225,30 +204,15 @@
   "シュナ",
   "https://i.pinimg.com/originals/97/8a/7f/978a7fd0522b7cbe7489c9f008501d30.png"
 );
-@include create-card(
-  "179800",
-  "Hinata Sakaguchi",
-  "坂口 日向",
-  "https://i.imgur.com/4KWYGwq.jpg"
-);
-@include create-card(
-  "502",
-  "Rider",
-  "ライダー",
-  "https://i.kym-cdn.com/photos/images/original/001/883/989/85d"
-);
+@include create-card("179800", "Hinata Sakaguchi", "坂口 日向", "https://i.imgur.com/4KWYGwq.jpg");
+@include create-card("502", "Rider", "ライダー", "https://i.kym-cdn.com/photos/images/original/001/883/989/85d");
 @include create-card(
   "162644",
   "Miu Takigawa",
   "滝川 みう",
   "https://64.media.tumblr.com/fe54c7687f0b7fa37fe7c2c811b78d55/f431dda00fd2f767-94/s400x600/ca6aafcd4cd1bd94f3cdbab722b8b1bdd65d6e13.png"
 );
-@include create-card(
-  "174387",
-  "Hammann",
-  "ハムマン",
-  "https://i.imgur.com/3SCupXs.jpeg"
-);
+@include create-card("174387", "Hammann", "ハムマン", "https://i.imgur.com/3SCupXs.jpeg");
 @include create-card(
   "150596",
   "Pieck Finger",
@@ -272,12 +236,7 @@
   "https://static.wikia.nocookie.net/onepiecefanon/images/7/78/Saeko.jpg/revision/latest?cb=20200522075356",
   "Oda Nobunaga"
 );
-@include create-card(
-  "91605",
-  "Julie Sigtuna",
-  "ユリエ・シグトゥーナ",
-  "https://i.imgur.com/IatFrYW.png"
-);
+@include create-card("91605", "Julie Sigtuna", "ユリエ・シグトゥーナ", "https://i.imgur.com/IatFrYW.png");
 @include create-card(
   "117225",
   "Megumin",
@@ -302,18 +261,8 @@
   "エスデス",
   "https://cs10.pikabu.ru/post_img/2019/10/17/10/1571334098197731034.jpg"
 );
-@include create-card(
-  "193037",
-  "Sajuna Inui",
-  "乾 紗寿叶",
-  "https://i.imgur.com/HQfQ632.jpg"
-);
-@include create-card(
-  "195814",
-  "Shinju Inui",
-  "乾 心寿",
-  "https://i.imgur.com/ZVC0jW4.jpg"
-);
+@include create-card("193037", "Sajuna Inui", "乾 紗寿叶", "https://i.imgur.com/HQfQ632.jpg");
+@include create-card("195814", "Shinju Inui", "乾 心寿", "https://i.imgur.com/ZVC0jW4.jpg");
 
 /**
 * Anime
@@ -351,11 +300,7 @@
   "幼女戦記",
   "https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/2286391/Japanese/2286391_Japanese_ShowKeyart_2b6a2e3c-8403-465f-8e7f-339eb84f5045.jpg"
 );
-@include create-card(
-  "39551",
-  "Tensei shitara Slime Datta Ken 2nd Season",
-  "転生したらスライムだった件"
-);
+@include create-card("39551", "Tensei shitara Slime Datta Ken 2nd Season", "転生したらスライムだった件");
 
 /**
 * Manga
