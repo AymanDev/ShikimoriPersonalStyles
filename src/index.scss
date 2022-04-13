@@ -122,12 +122,17 @@
 /**
 * Characters
 */
-@include create-card("80243", "Shouko Nishimiya", "西宮 硝子", "https://i.imgur.com/OC9hFDU.png");
+@include create-card(
+  "80243",
+  "Shouko Nishimiya",
+  "西宮 硝子",
+  "https://i.imgur.com/OC9hFDU.png"
+);
 @include create-card(
   "118763",
   "Rem",
   "レム",
-  "https://cs4.pikabu.ru/post_img/big/2016/07/21/10/1469119610199778612.jpg"
+  "https://cs13.pikabu.ru/post_img/big/2020/08/25/9/1598365753133610973.png"
 );
 @include create-card(
   "67065",
@@ -139,7 +144,7 @@
   "136529",
   "Mumei",
   "無名 (穂積)",
-  "https://cs10.pikabu.ru/post_img/2019/05/18/11/1558206026140323329.jpg",
+  "https://p4.wallpaperbetter.com/wallpaper/581/299/661/anime-anime-girls-koutetsujou-no-kabaneri-mumei-wallpaper-preview.jpg",
   "Mumei (Hozumi)"
 );
 @include create-card(
@@ -148,14 +153,24 @@
   "胡蝶 しのぶ",
   "https://i.pinimg.com/originals/4a/fb/b1/4afbb153c45c598caee857c3c1901d34.png"
 );
-@include create-card("97761", "Jibril", "ジブリール", "https://i.ytimg.com/vi/8LQacPpYjLU/maxresdefault.jpg");
+@include create-card(
+  "97761",
+  "Jibril",
+  "ジブリール",
+  "https://i.ytimg.com/vi/8LQacPpYjLU/maxresdefault.jpg"
+);
 @include create-card(
   "177217",
   "Misha Necron",
   "ミーシャ・ネクロン",
-  "https://i1.sndcdn.com/artworks-ft8SBBnMFbwKdKm8-18WBJA-t500x500.jpg"
+  "https://i.imgur.com/XKMakx6.jpg"
 );
-@include create-card("176725", "Purifier", "ピュリファイアー", "https://i.imgur.com/sPnqFsx.jpg");
+@include create-card(
+  "176725",
+  "Purifier",
+  "ピュリファイアー",
+  "https://i.imgur.com/sPnqFsx.jpg"
+);
 @include create-card(
   "127141",
   "Noelle Shilva",
@@ -196,7 +211,7 @@
   "177539",
   "Ereshkigal",
   "エレシュキガル",
-  "https://external-preview.redd.it/I4BprEbKSg7wMyGN99FiLjEnBPXQywTT4RoUK9AAHD0.jpg?auto=webp&s=10e43b4e004b49d8399b6951aa99f71a412634b2"
+  "https://cs14.pikabu.ru/post_img/big/2021/08/26/3/1629947571192798858.jpg"
 );
 @include create-card(
   "67067",
@@ -210,30 +225,50 @@
   "シュナ",
   "https://i.pinimg.com/originals/97/8a/7f/978a7fd0522b7cbe7489c9f008501d30.png"
 );
-@include create-card("179800", "Hinata Sakaguchi", "坂口 日向", "https://i.imgur.com/4KWYGwq.jpg");
-@include create-card("502", "Rider", "ライダー", "https://i.kym-cdn.com/photos/images/original/001/883/989/85d");
+@include create-card(
+  "179800",
+  "Hinata Sakaguchi",
+  "坂口 日向",
+  "https://i.imgur.com/4KWYGwq.jpg"
+);
+@include create-card(
+  "502",
+  "Rider",
+  "ライダー",
+  "https://i.kym-cdn.com/photos/images/original/001/883/989/85d"
+);
 @include create-card(
   "162644",
   "Miu Takigawa",
   "滝川 みう",
   "https://64.media.tumblr.com/fe54c7687f0b7fa37fe7c2c811b78d55/f431dda00fd2f767-94/s400x600/ca6aafcd4cd1bd94f3cdbab722b8b1bdd65d6e13.png"
 );
-@include create-card("174387", "Hammann", "ハムマン", "https://i.imgur.com/3SCupXs.jpeg");
+@include create-card(
+  "174387",
+  "Hammann",
+  "ハムマン",
+  "https://i.imgur.com/3SCupXs.jpeg"
+);
 @include create-card(
   "150596",
   "Pieck Finger",
   "ピーク・フィンガー",
-  "https://i.pinimg.com/474x/6c/bb/22/6cbb2262ca9408358c6a37ba989dcb80.jpg"
+  "https://i.pinimg.com/originals/86/a3/d4/86a3d4c75363aaaed98d5cdab7ecc97b.png"
 );
 @include create-card("152629", "Latifa", "ラティーファ");
 @include create-card("188707", "Orphia", "オーフィア");
-@include create-card("200661", "Sayo", "沙世");
+@include create-card(
+  "200661",
+  "Sayo",
+  "沙世",
+  "https://otakukart.com/wp-content/uploads/2021/08/Screenshot-2021-08-25-113330.jpg"
+);
 @include create-card("188706", "Sara", "サラ");
 @include create-card(
   "147860",
   "Celia Claire",
   "セリア＝クレール",
-  "https://static.wikia.nocookie.net/seirei-gensouki/images/8/85/CeliaPic.JPG/revision/latest?cb=20190415134151"
+  "https://i.imgur.com/xzljLrG.jpg"
 );
 @include create-card(
   "137864",
@@ -242,7 +277,12 @@
   "https://static.wikia.nocookie.net/onepiecefanon/images/7/78/Saeko.jpg/revision/latest?cb=20200522075356",
   "Oda Nobunaga"
 );
-@include create-card("91605", "Julie Sigtuna", "ユリエ・シグトゥーナ", "https://i.imgur.com/IatFrYW.png");
+@include create-card(
+  "91605",
+  "Julie Sigtuna",
+  "ユリエ・シグトゥーナ",
+  "https://i.imgur.com/IatFrYW.png"
+);
 @include create-card(
   "117225",
   "Megumin",
@@ -267,8 +307,67 @@
   "エスデス",
   "https://cs10.pikabu.ru/post_img/2019/10/17/10/1571334098197731034.jpg"
 );
-@include create-card("193037", "Sajuna Inui", "乾 紗寿叶", "https://i.imgur.com/HQfQ632.jpg");
-@include create-card("195814", "Shinju Inui", "乾 心寿", "https://i.imgur.com/ZVC0jW4.jpg");
+@include create-card(
+  "193037",
+  "Sajuna Inui",
+  "乾 紗寿叶",
+  "https://i.imgur.com/HQfQ632.jpg"
+);
+@include create-card(
+  "195814",
+  "Shinju Inui",
+  "乾 心寿",
+  "https://i.imgur.com/ZVC0jW4.jpg"
+);
+@include create-card(
+  "171851",
+  "Sumi Sakurasawa",
+  "桜沢 墨",
+  "https://i.imgur.com/Ans7qQX.jpg"
+);
+@include create-card(
+  "202069",
+  "Sirius",
+  "シリウス",
+  "https://i.imgur.com/s7yNEEFh.jpg"
+);
+@include create-card(
+  "158730",
+  "Fana",
+  "ファナ",
+  "https://i.pinimg.com/originals/1d/6b/e9/1d6be9fd6fc91b9107c776a636d984fb.jpg"
+);
+@include create-card(
+  "112907",
+  "Atla",
+  "アトラ",
+  "https://i.redd.it/fg1ptbmi9e161.png"
+);
+@include create-card(
+  "112157",
+  "Aka no Archer",
+  "赤のアーチャー",
+  "https://i.imgur.com/qQillyW.jpg",
+  "Aka no Archer (Atalanta)"
+);
+@include create-card(
+  "175281",
+  "Atago",
+  "愛宕",
+  "https://i.imgur.com/tI37zmS.jpg",
+);
+@include create-card(
+  "64523",
+  "Yuuki Konno",
+  "紺野 木綿季",
+  "https://static.zerochan.net/Konno.Yuuki.full.3095610.jpg",
+);
+@include create-card(
+  "184959",
+  "Araya Endou",
+  "遠藤 亞羅椰",
+  "https://images-cdn.9gag.com/photo/aAbnQbd_700b.jpg",
+);
 
 /**
 * Anime
@@ -306,7 +405,11 @@
   "幼女戦記",
   "https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/2286391/Japanese/2286391_Japanese_ShowKeyart_2b6a2e3c-8403-465f-8e7f-339eb84f5045.jpg"
 );
-@include create-card("39551", "Tensei shitara Slime Datta Ken 2nd Season", "転生したらスライムだった件");
+@include create-card(
+  "39551",
+  "Tensei shitara Slime Datta Ken 2nd Season",
+  "転生したらスライムだった件"
+);
 
 /**
 * Manga

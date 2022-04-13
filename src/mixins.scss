@@ -19,6 +19,10 @@
   }
   @if $img-url != "null" {
     img[src*="#{$id}"][alt="#{$en-name}"] {
+      min-width: 225px;
+      min-height: 350px;
+      object-fit: cover;
+      image-rendering: -webkit-optimize-contrast;
       content: url("#{$img-url}");
     }
   }
