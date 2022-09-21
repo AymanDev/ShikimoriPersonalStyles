@@ -18,11 +18,19 @@
     content: "#{$custom-en-name}" !important;
   }
   @if $img-url != "null" {
-    img[src*="#{$id}"][alt="#{$en-name}"] {
+    $img-selector: "img[src*=\"#{$id}\"][alt=\"#{$en-name}\"]";
+    #{$img-selector} {
+      object-fit: cover;
+      content: url("http://194.58.103.63:3000/img/resize?smart=0&width=450&height=700&url=#{encodeURI($img-url)}");
+    }
+    .p-characters .c-poster #{$img-selector}, .cc-favourites #{$img-selector} {
       min-width: 225px;
       min-height: 350px;
-      object-fit: cover;
-      content: url("#{$img-url}");
+    }
+
+    .tooltip #{$img-selector} {
+      min-width: 154px;
+      min-height: 240px;
     }
   }
 }
