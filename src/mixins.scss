@@ -21,7 +21,7 @@
     $img-selector: "img[src*=\"#{$id}\"][alt=\"#{$en-name}\"]";
     #{$img-selector} {
       object-fit: cover;
-      content: url("http://194.58.103.63:3000/img/resize?smart=0&width=450&height=700&url=#{encodeURI($img-url)}");
+      content: url("https://korekuta.ru/img/resize?smart=0&width=450&height=700&url=#{encodeURI($img-url)}");
     }
     .p-characters .c-poster #{$img-selector}, .cc-favourites #{$img-selector} {
       min-width: 225px;
