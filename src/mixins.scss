@@ -18,12 +18,13 @@
     content: "#{$custom-en-name}" !important;
   }
   @if $img-url != "null" {
-    $img-selector: "img[src*=\"#{$id}\"][alt=\"#{$en-name}\"]";
+    $img-selector: 'img[src*="#{$id}"][alt="#{$en-name}"]';
     #{$img-selector} {
       object-fit: cover;
-      content: url("https://korekuta.ru/img/resize?smart=0&width=450&height=700&url=#{encodeURI($img-url)}");
+      content: url("https://korekuta.ru/api/img/resize?smart=0&width=450&height=700&url=#{encodeURI($img-url)}");
     }
-    .p-characters .c-poster #{$img-selector}, .cc-favourites #{$img-selector} {
+    .p-characters .c-poster #{$img-selector},
+    .cc-favourites #{$img-selector} {
       min-width: 225px;
       min-height: 350px;
     }
