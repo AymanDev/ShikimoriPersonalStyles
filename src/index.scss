@@ -1,6 +1,62 @@
 @use "sass:string";
+
+@import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_1.css");
+@import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_2.css");
+@import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_3.css");
+@import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_4mob.css");
+
 @import "./mixins.scss";
 @import "./functions.scss";
+
+body:after {
+  background-image: url("https://i.imgur.com/njwbLMV.jpg");
+}
+
+.l-footer:after {
+  content: "*Lignum*";
+  display: none !important;
+}
+
+@media screen and (min-width: 1px) {
+  .correct-mob-version {
+    color: normal;
+  }
+}
+
+.shikista {
+  color: white;
+}
+
+@media screen and (min-width: 1px) {
+  html:root {
+    --white-color: 194, 240, 234;
+    --light-color: 146, 196, 183;
+    --dark-color: 108, 172, 165;
+    --bright-color: 52, 178, 146;
+    --dull-color: 133, 224, 201;
+    --input-color: 75, 155, 128;
+    --hover-bottoms-1: 18, 43, 37;
+    --buttoms-color: 31, 71, 61;
+    --hover-buttoms-2: 81, 107, 6;
+    --very-high-rating: 65, 164, 164;
+    --high-rating: 58, 120, 120;
+    --average-rating: 35, 92, 92;
+    --small-rating: 21, 71, 71;
+    --time-filled: 20, 61, 54;
+    --time-empty: 13, 33, 30;
+    --anime-inprocess: 69, 146, 76;
+    --anime-complete: 41, 107, 47;
+    --manga-inprocess: 189, 15, 86;
+    --manga-complete: 153, 0, 62;
+    --hover-color: 125, 171, 31;
+    --shadows-color: 83, 172, 172;
+    --block-color: 23, 54, 54;
+    --menu-back: 0, 10, 10;
+    --nick-cover: 32, 96, 85;
+    --popup-color: 0, 20, 20;
+    --hundred: 1;
+  }
+}
 
 .l-footer .copyright::after {
   content: "v#{$VERSION}";
@@ -9,6 +65,7 @@
 .bar.vertical .line {
   overflow: visible;
 }
+
 .activity .graph.vertical .line .bar {
   animation-name: none;
 }
@@ -27,6 +84,7 @@
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: 1fr;
 }
+
 .c-manga {
   order: 0;
 }
@@ -76,15 +134,18 @@
 .profile-content .c-column.c-right {
   display: contents;
 }
+
 .profile-content .c-column.c-right .cc-2a.m30 {
   grid-area: b;
   display: flex;
   flex-direction: column;
   margin-left: 30px;
 }
+
 .profile-content .c-column.c-right .cc-2a.m30 > .c-column {
   width: 100%;
 }
+
 .profile-content .c-column.c-right .block {
   grid-area: c;
 }
@@ -113,9 +174,71 @@
 
   font-size: 16px;
 }
+
 @media screen and (max-width: 1023px) {
   .cc-favourites .cover::after {
     display: none;
+  }
+}
+
+#profiles_show .block.achievements > .cc-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  & > .c-column {
+    width: unset;
+  }
+}
+
+.tooltip {
+  .b-catalog_entry,
+  .entry-tooltip_container > a > picture > img {
+    min-width: 154px;
+    max-width: 154px;
+
+    min-height: 240px;
+    max-height: 240px;
+  }
+
+  .b-catalog_entry-tooltip .inner .additional-images .link img {
+    width: unset;
+  }
+
+  .best-works {
+    display: flex;
+    overflow: auto hidden !important;
+  }
+
+  .best-works,
+  .additional-images {
+    .b-catalog_entry {
+      min-width: 96px;
+      max-width: 96px;
+
+      min-height: 160px;
+      max-height: 160px;
+    }
+  }
+
+  .entry-tooltip_container > .inner {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    overflow: hidden;
+
+    .line {
+      order: 0;
+    }
+
+    .text {
+      order: 1;
+    }
+
+    .additional-images {
+      order: 2;
+    }
   }
 }
 
@@ -128,49 +251,23 @@
   "西宮 硝子",
   "https://korekuta.ru/static/sumiko/shouko_nishimiya.png"
 );
-@include create-card(
-  "118763",
-  "Rem",
-  "レム",
-  "https://korekuta.ru/static/sumiko/rem.png"
-);
+@include create-card("118763", "Rem", "レム", "https://korekuta.ru/static/sumiko/rem.png");
 @include create-card(
   "67065",
   "Hachiman Hikigaya",
   "比企谷 八幡",
   "https://korekuta.ru/static/sumiko/hachiman_hikigaya.png"
 );
-@include create-card(
-  "136529",
-  "Mumei",
-  "無名 (穂積)",
-  "https://korekuta.ru/static/sumiko/mumei.png",
-  "Mumei (Hozumi)"
-);
-@include create-card(
-  "146736",
-  "Kochou Shinobu",
-  "胡蝶 しのぶ",
-  "https://korekuta.ru/static/sumiko/kochou_shinobu.png"
-);
-@include create-card(
-  "97761",
-  "Jibril",
-  "ジブリール",
-  "https://korekuta.ru/static/sumiko/jibril.jpg"
-);
+@include create-card("136529", "Mumei", "無名 (穂積)", "https://korekuta.ru/static/sumiko/mumei.jpg", "Mumei (Hozumi)");
+@include create-card("146736", "Kochou Shinobu", "胡蝶 しのぶ", "https://korekuta.ru/static/sumiko/kochou_shinobu.png");
+@include create-card("97761", "Jibril", "ジブリール", "https://korekuta.ru/static/sumiko/jibril.jpg");
 @include create-card(
   "177217",
   "Misha Necron",
   "ミーシャ・ネクロン",
   "https://korekuta.ru/static/sumiko/misha_necron.jpg"
 );
-@include create-card(
-  "176725",
-  "Purifier",
-  "ピュリファイアー",
-  "https://korekuta.ru/static/sumiko/purifier.jpg"
-);
+@include create-card("176725", "Purifier", "ピュリファイアー", "https://korekuta.ru/static/sumiko/purifier.jpg");
 @include create-card(
   "143724",
   "Charmy Papittson",
@@ -196,48 +293,23 @@
   "https://korekuta.ru/static/sumiko/mei_raiden.png",
   "Raiden Mei"
 );
-@include create-card(
-  "177539",
-  "Ereshkigal",
-  "エレシュキガル",
-  "https://korekuta.ru/static/sumiko/ereshkigal.jpg"
-);
+@include create-card("177539", "Ereshkigal", "エレシュキガル", "https://korekuta.ru/static/sumiko/ereshkigal.jpg");
 @include create-card(
   "67067",
   "Yukino Yukinoshita",
   "雪ノ下 雪乃",
   "https://korekuta.ru/static/sumiko/yukino_yukinoshita.jpg"
 );
-@include create-card(
-  "131943",
-  "Shuna",
-  "シュナ",
-  "https://korekuta.ru/static/sumiko/shuna.jpg"
-);
+@include create-card("131943", "Shuna", "シュナ", "https://korekuta.ru/static/sumiko/shuna.jpg");
 @include create-card(
   "179800",
   "Hinata Sakaguchi",
   "坂口 日向",
   "https://korekuta.ru/static/sumiko/hinata_sakaguchi.jpg"
 );
-@include create-card(
-  "502",
-  "Rider",
-  "ライダー",
-  "https://korekuta.ru/static/sumiko/rider.jpg"
-);
-@include create-card(
-  "162644",
-  "Miu Takigawa",
-  "滝川 みう",
-  "https://korekuta.ru/static/sumiko/miu_takigawa.png"
-);
-@include create-card(
-  "174387",
-  "Hammann",
-  "ハムマン",
-  "https://korekuta.ru/static/sumiko/hammann.jpeg"
-);
+@include create-card("502", "Rider", "ライダー", "https://korekuta.ru/static/sumiko/rider.jpg");
+@include create-card("162644", "Miu Takigawa", "滝川 みう", "https://korekuta.ru/static/sumiko/miu_takigawa.png");
+@include create-card("174387", "Hammann", "ハムマン", "https://korekuta.ru/static/sumiko/hammann.jpeg");
 @include create-card(
   "150596",
   "Pieck Finger",
@@ -246,12 +318,7 @@
 );
 @include create-card("152629", "Latifa", "ラティーファ");
 @include create-card("188707", "Orphia", "オーフィア");
-@include create-card(
-  "200661",
-  "Sayo",
-  "沙世",
-  "https://korekuta.ru/static/sumiko/sayo.jpg"
-);
+@include create-card("200661", "Sayo", "沙世", "https://korekuta.ru/static/sumiko/sayo.jpg");
 @include create-card("188706", "Sara", "サラ");
 @include create-card(
   "147860",
@@ -272,66 +339,21 @@
   "ユリエ・シグトゥーナ",
   "https://korekuta.ru/static/sumiko/julie_sigtuna.jpg"
 );
-@include create-card(
-  "117225",
-  "Megumin",
-  "めぐみん",
-  "https://korekuta.ru/static/sumiko/megumin.jpg"
-);
-@include create-card(
-  "180683",
-  "Rose",
-  "ロゼ",
-  "https://korekuta.ru/static/sumiko/rose.jpg"
-);
+@include create-card("117225", "Megumin", "めぐみん", "https://korekuta.ru/static/sumiko/megumin.jpg");
+@include create-card("180683", "Rose", "ロゼ", "https://korekuta.ru/static/sumiko/rose.jpg");
 @include create-card(
   "117747",
   "Narberal Gamma",
   "ナーベラル・ガンマ",
   "https://korekuta.ru/static/sumiko/narberal_gamma.jpg"
 );
-@include create-card(
-  "65239",
-  "Esdeath",
-  "エスデス",
-  "https://korekuta.ru/static/sumiko/esdeath.jpg"
-);
-@include create-card(
-  "193037",
-  "Sajuna Inui",
-  "乾 紗寿叶",
-  "https://korekuta.ru/static/sumiko/sajuna_inui.jpg"
-);
-@include create-card(
-  "195814",
-  "Shinju Inui",
-  "乾 心寿",
-  "https://korekuta.ru/static/sumiko/shinju_inui.jpg"
-);
-@include create-card(
-  "171851",
-  "Sumi Sakurasawa",
-  "桜沢 墨",
-  "https://korekuta.ru/static/sumiko/sumi_sakurasawa.jpg"
-);
-@include create-card(
-  "202069",
-  "Sirius",
-  "シリウス",
-  "https://korekuta.ru/static/sumiko/sirius.jpg"
-);
-@include create-card(
-  "158730",
-  "Fana",
-  "ファナ",
-  "https://korekuta.ru/static/sumiko/fana.jpg"
-);
-@include create-card(
-  "112907",
-  "Atla",
-  "アトラ",
-  "https://korekuta.ru/static/sumiko/atla.png"
-);
+@include create-card("65239", "Esdeath", "エスデス", "https://korekuta.ru/static/sumiko/esdeath.jpg");
+@include create-card("193037", "Sajuna Inui", "乾 紗寿叶", "https://korekuta.ru/static/sumiko/sajuna_inui.jpg");
+@include create-card("195814", "Shinju Inui", "乾 心寿", "https://korekuta.ru/static/sumiko/shinju_inui.jpg");
+@include create-card("171851", "Sumi Sakurasawa", "桜沢 墨", "https://korekuta.ru/static/sumiko/sumi_sakurasawa.jpg");
+@include create-card("202069", "Sirius", "シリウス", "https://korekuta.ru/static/sumiko/sirius.jpg");
+@include create-card("158730", "Fana", "ファナ", "https://korekuta.ru/static/sumiko/fana.jpg");
+@include create-card("112907", "Atla", "アトラ", "https://korekuta.ru/static/sumiko/atla.png");
 @include create-card(
   "112157",
   "Aka no Archer",
@@ -339,55 +361,24 @@
   "https://korekuta.ru/static/sumiko/aka_no_archer.jpg",
   "Aka no Archer (Atalanta)"
 );
-@include create-card(
-  "175281",
-  "Atago",
-  "愛宕",
-  "https://korekuta.ru/static/sumiko/atago.jpg"
-);
-@include create-card(
-  "64523",
-  "Yuuki Konno",
-  "紺野 木綿季",
-  "https://korekuta.ru/static/sumiko/yuuki_konno.jpg"
-);
-@include create-card(
-  "184959",
-  "Araya Endou",
-  "遠藤 亞羅椰",
-  "https://korekuta.ru/static/sumiko/araya_endou.jpg"
-);
+@include create-card("175281", "Atago", "愛宕", "https://korekuta.ru/static/sumiko/atago.jpg");
+@include create-card("64523", "Yuuki Konno", "紺野 木綿季", "https://korekuta.ru/static/sumiko/yuuki_konno.jpg");
+@include create-card("184959", "Araya Endou", "遠藤 亞羅椰", "https://korekuta.ru/static/sumiko/araya_endou.jpg");
 @include create-card(
   "182080",
   "Micchon Shikimori",
   "式守 みっちょん",
   "https://korekuta.ru/static/sumiko/micchon_shikimori.jpg"
 );
-@include create-card(
-  "184892",
-  "Yui Hachimitsu",
-  "八満 結",
-  "https://korekuta.ru/static/sumiko/yui_hachimitsu.png"
-);
+@include create-card("184892", "Yui Hachimitsu", "八満 結", "https://korekuta.ru/static/sumiko/yui_hachimitsu.png");
 @include create-card(
   "137825",
   "Tanya Degurechaff",
   "ターニャ・デグレチャフ",
   "https://korekuta.ru/static/sumiko/tanya_degurechaff.jpg"
 );
-@include create-card(
-  "172816",
-  "Hua Fu",
-  "フカ",
-  "https://korekuta.ru/static/sumiko/huf_fu.jpg",
-  "Fu Hua"
-);
-@include create-card(
-  "176544",
-  "Karyl",
-  "キャル",
-  "https://korekuta.ru/static/sumiko/karyl.png"
-);
+@include create-card("172816", "Hua Fu", "フカ", "https://korekuta.ru/static/sumiko/huf_fu.jpg", "Fu Hua");
+@include create-card("176544", "Karyl", "キャル", "https://korekuta.ru/static/sumiko/karyl.png");
 @include create-card(
   "204694",
   "Ginny Fin de Salvan",
@@ -406,12 +397,21 @@
   "ミレーヌ・ラファ・ホルファート",
   "https://korekuta.ru/static/sumiko/mylene_rapha_holfort.jpg"
 );
+@include create-card("112749", "Shigure Yukimi", "雪見 時雨", "https://korekuta.ru/static/sumiko/shigure_yukimi.png");
 @include create-card(
-  "112749",
-  "Shigure Yukimi",
-  "雪見 時雨",
-  "https://korekuta.ru/static/sumiko/shigure_yukimi.png"
+  "128909",
+  "Kiyotaka Ayanokouji",
+  "綾小路 清隆",
+  "https://korekuta.ru/static/sumiko/kiyotaka_ayanokouji.jpg"
 );
+@include create-card(
+  "8917",
+  "Kaguya Houraisan",
+  "蓬萊山 輝夜",
+  "https://korekuta.ru/static/sumiko/kaguya-houraisan.jpg"
+);
+@include create-card("151195", "Bondrewd", "ボンドルド", "https://korekuta.ru/static/sumiko/bondrewd.png");
+@include create-card("19797", "Tia", "Tia", "https://korekuta.ru/static/sumiko/tia.webp");
 
 /**
 * Anime
@@ -434,15 +434,12 @@
   "劇場版「Fate/stay night [Heaven's Feel] III.spring song」",
   "https://korekuta.ru/static/sumiko/fate_stay_night_movie_heavens_feel_iii_spring_song.jpg"
 );
+
 #{get-favorite-card-name-selector("33050")} {
   @include fluid-type(11px, 13px);
 }
-@include create-card(
-  "38328",
-  "Azur Lane",
-  "アズールレーン",
-  "https://korekuta.ru/static/sumiko/azur_lane.jpg"
-);
+
+@include create-card("38328", "Azur Lane", "アズールレーン", "https://korekuta.ru/static/sumiko/azur_lane.jpg");
 @include create-card(
   "32615",
   "Youjo Senki",
@@ -465,12 +462,7 @@
   "進撃の巨人",
   "https://korekuta.ru/static/sumiko/shingeki_no_kyojin.jpg"
 );
-@include create-card(
-  "56805",
-  "Koe no Katachi",
-  "聲の形",
-  "https://korekuta.ru/static/sumiko/koe_no_katachi.jpg"
-);
+@include create-card("56805", "Koe no Katachi", "聲の形", "https://korekuta.ru/static/sumiko/koe_no_katachi.jpg");
 @include create-card(
   "67615",
   "Tate no Yuusha no Nariagari",
@@ -481,27 +473,12 @@
 /**
 * Ranobe
 */
-@include create-card(
-  "104039",
-  "86",
-  "86-エイティシックス-",
-  "https://korekuta.ru/static/sumiko/86.jpg"
-);
+@include create-card("104039", "86", "86-エイティシックス-", "https://korekuta.ru/static/sumiko/86.jpg");
 
 /**
 * Person
 */
-@include create-card("869", "Saori Hayami", "早見 沙織");
-@include create-card(
-  "26063",
-  "Reina Ueda",
-  "上田 麗奈",
-  "https://korekuta.ru/static/sumiko/reina_ueda.jpg"
-);
-@include create-card("40497", "MYTH & ROID", "MYTH & ROID");
-@include create-card(
-  "91",
-  "Jouji Nakata",
-  "中田 譲治",
-  "https://korekuta.ru/static/sumiko/jouji_nakata.jpg"
-);
+@include create-card("869", "Saori Hayami", "早見 沙織", "https://korekuta.ru/static/sumiko/saori_hayami.webp");
+@include create-card("26063", "Reina Ueda", "上田 麗奈", "https://korekuta.ru/static/sumiko/reina_ueda.jpg");
+@include create-card("40497", "MYTH & ROID", "MYTH & ROID", "https://korekuta.ru/static/sumiko/myth_and_roid.jpg");
+@include create-card("91", "Jouji Nakata", "中田 譲治", "https://korekuta.ru/static/sumiko/jouji_nakata.jpg");

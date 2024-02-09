@@ -24,6 +24,7 @@ try {
   const result = sass.renderSync({
     data: `$VERSION: "${packageVersion}";\n${data}`,
     includePaths: [srcFolder],
+    charset: false,
   });
   console.timeEnd("Render SCSS");
 

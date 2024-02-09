@@ -18,20 +18,27 @@
     content: "#{$custom-en-name}" !important;
   }
   @if $img-url != "null" {
-    $img-selector: 'img[src*="#{$id}"][alt="#{$en-name}"]';
-    #{$img-selector} {
-      object-fit: cover;
-      content: url("https://korekuta.ru/api/img/resize?smart=0&width=450&height=700&url=#{encodeURI($img-url)}");
+    $img-selector: ".entry-#{$id}";
+
+    #{$img-selector} .image-cutter {
+      background: url($img-url);
+      background-size: cover;
+      background-position: center center;
+
+      picture {
+        display: none;
+      }
     }
+
+    img[src*="/#{$id}/"] {
+      content: url($img-url);
+      object-fit: cover;
+    }
+
     .p-characters .c-poster #{$img-selector},
     .cc-favourites #{$img-selector} {
       min-width: 225px;
       min-height: 350px;
-    }
-
-    .tooltip #{$img-selector} {
-      min-width: 154px;
-      min-height: 240px;
     }
   }
 }
