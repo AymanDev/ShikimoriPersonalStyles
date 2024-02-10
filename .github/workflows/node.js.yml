@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm run build:all --if-present
+    - run: npm install --save && npm run build:all --if-present
     - name: Release
       uses: ncipollo/release-action@v1
       with:
