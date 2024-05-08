@@ -20,8 +20,16 @@
   @if $img-url != "null" {
     $img-selector: ".entry-#{$id}";
 
+    $image-url: "";
+
+    @if str-index($img-url, "https://korekuta.ru") {
+      $image-url: "https://korekuta.ru/api/img/resize/#{str-replace($img-url, 'https://korekuta.ru/static/','')}?width=350&height=520";
+    } @else {
+      $image-url: $img-url;
+    }
+
     #{$img-selector} .image-cutter {
-      background: url($img-url);
+      background: url($image-url);
       background-size: cover;
       background-position: center center;
 
@@ -31,7 +39,7 @@
     }
 
     img[src*="/#{$id}/"] {
-      content: url($img-url);
+      content: url($image-url);
       object-fit: cover;
     }
 
@@ -65,4 +73,19 @@
   @media screen and (min-width: $upper-range) {
     font-size: $max-font-size;
   }
+}
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace +
+      str-replace(
+        str-slice($string, $index + str-length($search)),
+        $search,
+        $replace
+      );
+  }
+
+  @return $string;
 }
